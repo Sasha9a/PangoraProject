@@ -21,7 +21,7 @@ stock SetPlayerSpawn(playerid)
 		SetPlayerSkin(playerid, 123);
 		SetPlayerVirtualWorld(playerid, playerid + 1000);
 		SetCameraBehindPlayer(playerid);
-		if(!Player[playerid][pSTips]) HelpSCM(playerid, "Подождите, идет загрузка..");
+		if(!Player[playerid][pSTips]) HelpSCM(playerid, "РџРѕРґРѕР¶РґРёС‚Рµ, РёРґРµС‚ Р·Р°РіСЂСѓР·РєР°..");
 		SetTimerEx("FuncLoadRecon", 1000, false, "d", playerid);
 	}
 	else if(get_int(playerid, "UnLoadRecon") == 1)
@@ -32,7 +32,7 @@ stock SetPlayerSpawn(playerid)
 		SetPlayerSkin(playerid, 123);
 		SetPlayerVirtualWorld(playerid, playerid + 1000);
 		SetCameraBehindPlayer(playerid);
-		if(!Player[playerid][pSTips]) HelpSCM(playerid, "Подождите, идет загрузка..");
+		if(!Player[playerid][pSTips]) HelpSCM(playerid, "РџРѕРґРѕР¶РґРёС‚Рµ, РёРґРµС‚ Р·Р°РіСЂСѓР·РєР°..");
 		SetTimerEx("FuncUnLoadRecon", 1000, false, "d", playerid);
 	}
 	else if(get_int(playerid, "LoadPanelReDriver") == 1)
@@ -56,15 +56,15 @@ stock SetPlayerSpawn(playerid)
 		InterpolateCameraLookAt(playerid, 1448.5928, -1953.7721, 15.8185, 1778.9659, -1953.9000, 15.8185, 30000);
 		if(!Player[playerid][pSTips]) 
 		{
-			HelpSCM(playerid, "Нужна помощь по игре? Введите: {FFFF00}/ghelp{FFFFFF}");
+			HelpSCM(playerid, "РќСѓР¶РЅР° РїРѕРјРѕС‰СЊ РїРѕ РёРіСЂРµ? Р’РІРµРґРёС‚Рµ: {FFFF00}/ghelp{FFFFFF}");
 			if(GetPremium(Player[playerid][pID]))
 			{
 				new string[150], premium = GetPremium(Player[playerid][pID]), text[50];
-				if(1 <= premium <= 59) f(text, "%02d сек.", premium);
-				else if(60 <= premium <= 3599) f(text, "%02d мин. %02d сек.", premium / 60, premium % 60);
-				else if(3600 <= premium <= 86399) f(text, "%02d ч. %02d мин. %02d сек.", premium / 60 / 60, premium / 60 % 60, premium % 60);
-				else f(text, "%d д. %02d ч. %02d мин. %02d сек.", premium / 60 / 60 / 24, premium / 60 / 60 % 24, premium / 60 % 60, premium % 60);
-				f(string, "У вас действует премиум аккаунт. Он закончится через {FFFF00}%s{FFFFFF}", text), HelpSCM(playerid, string);
+				if(1 <= premium <= 59) f(text, "%02d СЃРµРє.", premium);
+				else if(60 <= premium <= 3599) f(text, "%02d РјРёРЅ. %02d СЃРµРє.", premium / 60, premium % 60);
+				else if(3600 <= premium <= 86399) f(text, "%02d С‡. %02d РјРёРЅ. %02d СЃРµРє.", premium / 60 / 60, premium / 60 % 60, premium % 60);
+				else f(text, "%d Рґ. %02d С‡. %02d РјРёРЅ. %02d СЃРµРє.", premium / 60 / 60 / 24, premium / 60 / 60 % 24, premium / 60 % 60, premium % 60);
+				f(string, "РЈ РІР°СЃ РґРµР№СЃС‚РІСѓРµС‚ РїСЂРµРјРёСѓРј Р°РєРєР°СѓРЅС‚. РћРЅ Р·Р°РєРѕРЅС‡РёС‚СЃСЏ С‡РµСЂРµР· {FFFF00}%s{FFFFFF}", text), HelpSCM(playerid, string);
 			}
 		}
 	}
@@ -140,8 +140,8 @@ stock SetPlayerSpawn(playerid)
 				SetCameraBehindPlayer(playerid);
 				if(!Player[playerid][pSTips])
 				{
-					HelpSCM(playerid, "Ожидайте пока Диспетчер даст разрешение на отправление состава");
-					HelpSCM(playerid, "Чтобы выйти в меню игры введите: {FFFF00}/exit{FFFFFF}");
+					HelpSCM(playerid, "РћР¶РёРґР°Р№С‚Рµ РїРѕРєР° Р”РёСЃРїРµС‚С‡РµСЂ РґР°СЃС‚ СЂР°Р·СЂРµС€РµРЅРёРµ РЅР° РѕС‚РїСЂР°РІР»РµРЅРёРµ СЃРѕСЃС‚Р°РІР°");
+					HelpSCM(playerid, "Р§С‚РѕР±С‹ РІС‹Р№С‚Рё РІ РјРµРЅСЋ РёРіСЂС‹ РІРІРµРґРёС‚Рµ: {FFFF00}/exit{FFFFFF}");
 				}
 				set_int(playerid, "isWaitDriver", 1);
 				for(new i; i != sizeof(WorldDriverTrade[]); i++)
@@ -151,7 +151,7 @@ stock SetPlayerSpawn(playerid)
 						if(WorldDispatcher[GetPlayerVirtualWorld(playerid)])
 						{
 							new id = IsOnlineID(WorldDispatcher[GetPlayerVirtualWorld(playerid)]);
-							AlertSCM(id, "Появился новый машинист на очереди. Чтобы начать ему рейс, введите: {FFFF00}/accept{FFFFFF}");
+							AlertSCM(id, "РџРѕСЏРІРёР»СЃСЏ РЅРѕРІС‹Р№ РјР°С€РёРЅРёСЃС‚ РЅР° РѕС‡РµСЂРµРґРё. Р§С‚РѕР±С‹ РЅР°С‡Р°С‚СЊ РµРјСѓ СЂРµР№СЃ, РІРІРµРґРёС‚Рµ: {FFFF00}/accept{FFFFFF}");
 							if(!TimerWaitDriverDispatcher[id][1])
 							{
 								TimerWaitDriverDispatcher[id][0] = SetTimerEx("FineWaitDispatcher", 60*1000, false, "d", id);
@@ -170,8 +170,8 @@ stock SetPlayerSpawn(playerid)
 				SetCameraBehindPlayer(playerid);
 				if(!Player[playerid][pSTips])
 				{
-					HelpSCM(playerid, "Ожидайте пока Диспетчер даст разрешение на отправление состава");
-					HelpSCM(playerid, "Чтобы выйти в меню игры введите: {FFFF00}/exit{FFFFFF}");
+					HelpSCM(playerid, "РћР¶РёРґР°Р№С‚Рµ РїРѕРєР° Р”РёСЃРїРµС‚С‡РµСЂ РґР°СЃС‚ СЂР°Р·СЂРµС€РµРЅРёРµ РЅР° РѕС‚РїСЂР°РІР»РµРЅРёРµ СЃРѕСЃС‚Р°РІР°");
+					HelpSCM(playerid, "Р§С‚РѕР±С‹ РІС‹Р№С‚Рё РІ РјРµРЅСЋ РёРіСЂС‹ РІРІРµРґРёС‚Рµ: {FFFF00}/exit{FFFFFF}");
 				}
 				set_int(playerid, "isWaitDriver", 1);
 				for(new i; i != sizeof(WorldDriverPassenger[]); i++)
@@ -181,7 +181,7 @@ stock SetPlayerSpawn(playerid)
 						if(WorldDispatcher[GetPlayerVirtualWorld(playerid)])
 						{
 							new id = IsOnlineID(WorldDispatcher[GetPlayerVirtualWorld(playerid)]);
-							AlertSCM(id, "Появился новый машинист на очереди. Чтобы начать ему рейс, введите: {FFFF00}/accept{FFFFFF}");
+							AlertSCM(id, "РџРѕСЏРІРёР»СЃСЏ РЅРѕРІС‹Р№ РјР°С€РёРЅРёСЃС‚ РЅР° РѕС‡РµСЂРµРґРё. Р§С‚РѕР±С‹ РЅР°С‡Р°С‚СЊ РµРјСѓ СЂРµР№СЃ, РІРІРµРґРёС‚Рµ: {FFFF00}/accept{FFFFFF}");
 							if(!TimerWaitDriverDispatcher[id][1])
 							{
 								TimerWaitDriverDispatcher[id][0] = SetTimerEx("FineWaitDispatcher", 60*1000, false, "d", id);
@@ -225,7 +225,7 @@ stock SetPlayerSpawn(playerid)
 				}
 				if(Player[playerid][pPanel] > 1)
 				{
-					LabelDispatcher[playerid] = CreateDynamic3DTextLabel("Смотреть за машинистами\n{FFFF00}ALT", 0xFFFFFFFF, 1019.7561,173.3016,2001.0859, 20.0, INVALID_PLAYER_ID, INVALID_VEHICLE_ID, 0, GetPlayerVirtualWorld(playerid));
+					LabelDispatcher[playerid] = CreateDynamic3DTextLabel("РЎРјРѕС‚СЂРµС‚СЊ Р·Р° РјР°С€РёРЅРёСЃС‚Р°РјРё\n{FFFF00}ALT", 0xFFFFFFFF, 1019.7561,173.3016,2001.0859, 20.0, INVALID_PLAYER_ID, INVALID_VEHICLE_ID, 0, GetPlayerVirtualWorld(playerid));
 				}
 				foreach(new i: Player)
 				{
@@ -233,7 +233,7 @@ stock SetPlayerSpawn(playerid)
 					{
 						if(GetPlayerVirtualWorld(playerid) == GetPlayerVirtualWorld(i))
 						{
-							MindSCM(playerid, "Машинисты стоят на очереди. Введите: {FFFF00}/accept{FFFFFF}");
+							MindSCM(playerid, "РњР°С€РёРЅРёСЃС‚С‹ СЃС‚РѕСЏС‚ РЅР° РѕС‡РµСЂРµРґРё. Р’РІРµРґРёС‚Рµ: {FFFF00}/accept{FFFFFF}");
 							TimerWaitDriverDispatcher[playerid][0] = SetTimerEx("FineWaitDispatcher", 60*1000, false, "d", playerid);
 							TimerWaitDriverDispatcher[playerid][1] = 1;
 							break;
@@ -273,13 +273,13 @@ stock SavePlayer(i)
 }
 stock LabelText()
 {
-	CreateDynamic3DTextLabel("Выйти в меню игры\n{FFFF00}ALT", 0xFFFFFFFF, 1747.0049,-1943.4503,13.5702, 20.0);
-	CreateDynamic3DTextLabel("Выйти в меню игры\n{FFFF00}ALT", 0xFFFFFFFF, 2856.6018,1314.5780,11.3906, 20.0);
-	CreateDynamic3DTextLabel("Выйти в меню игры\n{FFFF00}ALT", 0xFFFFFFFF, 2856.5957,1266.9686,11.3906, 20.0);
-	CreateDynamic3DTextLabel("Выйти в меню игры\n{FFFF00}ALT", 0xFFFFFFFF, 1439.2949,2624.0913,11.39266, 20.0);
-	CreateDynamic3DTextLabel("Выйти в меню игры\n{FFFF00}ALT", 0xFFFFFFFF, -1959.6873,141.6173,27.6875, 20.0);
-	CreateDynamic3DTextLabel("Выйти в меню игры\n{FFFF00}ALT", 0xFFFFFFFF, 822.8423,-1353.8713,-0.5078, 20.0);
-	CreateDynamic3DTextLabel("Выйти в меню игры\n{FFFF00}ALT", 0xFFFFFFFF, 1021.0270,156.6576,2001.0859, 20.0);
+	CreateDynamic3DTextLabel("Р’С‹Р№С‚Рё РІ РјРµРЅСЋ РёРіСЂС‹\n{FFFF00}ALT", 0xFFFFFFFF, 1747.0049,-1943.4503,13.5702, 20.0);
+	CreateDynamic3DTextLabel("Р’С‹Р№С‚Рё РІ РјРµРЅСЋ РёРіСЂС‹\n{FFFF00}ALT", 0xFFFFFFFF, 2856.6018,1314.5780,11.3906, 20.0);
+	CreateDynamic3DTextLabel("Р’С‹Р№С‚Рё РІ РјРµРЅСЋ РёРіСЂС‹\n{FFFF00}ALT", 0xFFFFFFFF, 2856.5957,1266.9686,11.3906, 20.0);
+	CreateDynamic3DTextLabel("Р’С‹Р№С‚Рё РІ РјРµРЅСЋ РёРіСЂС‹\n{FFFF00}ALT", 0xFFFFFFFF, 1439.2949,2624.0913,11.39266, 20.0);
+	CreateDynamic3DTextLabel("Р’С‹Р№С‚Рё РІ РјРµРЅСЋ РёРіСЂС‹\n{FFFF00}ALT", 0xFFFFFFFF, -1959.6873,141.6173,27.6875, 20.0);
+	CreateDynamic3DTextLabel("Р’С‹Р№С‚Рё РІ РјРµРЅСЋ РёРіСЂС‹\n{FFFF00}ALT", 0xFFFFFFFF, 822.8423,-1353.8713,-0.5078, 20.0);
+	CreateDynamic3DTextLabel("Р’С‹Р№С‚Рё РІ РјРµРЅСЋ РёРіСЂС‹\n{FFFF00}ALT", 0xFFFFFFFF, 1021.0270,156.6576,2001.0859, 20.0);
 }
 stock FixText(const string[])
 {
@@ -288,39 +288,39 @@ stock FixText(const string[])
 	{
 		switch(string[i]) 
 		{ 
-			case 'а', 'А': result[i] = 'A'; 
-			case 'б', 'Б': result[i] = 'Ђ'; 
-			case 'в', 'В': result[i] = 'B'; 
-			case 'г', 'Г': result[i] = '‚'; 
-			case 'д', 'Д': result[i] = 'ѓ'; 
-			case 'е', 'Е': result[i] = 'E'; 
-			case 'ё', 'Ё': result[i] = 'E'; 
-			case 'ж', 'Ж': result[i] = '„'; 
-			case 'з', 'З': result[i] = '3'; 
-			case 'и', 'И': result[i] = '…'; 
-			case 'й', 'Й': result[i] = '†'; 
-			case 'к', 'К': result[i] = 'K'; 
-			case 'л', 'Л': result[i] = '‡'; 
-			case 'м', 'М': result[i] = 'M'; 
-			case 'н', 'Н': result[i] = 'H'; 
-			case 'о', 'О': result[i] = 'O'; 
-			case 'п', 'П': result[i] = 'Њ'; 
-			case 'р', 'Р': result[i] = 'P'; 
-			case 'с', 'С': result[i] = 'C'; 
-			case 'т', 'Т': result[i] = 'T'; 
-			case 'у', 'У': result[i] = 'Y'; 
-			case 'ф', 'Ф': result[i] = 'Ѓ'; 
-			case 'х', 'Х': result[i] = 'X'; 
-			case 'ц', 'Ц': result[i] = '‰'; 
-			case 'ч', 'Ч': result[i] = 'Ќ'; 
-			case 'ш', 'Ш': result[i] = 'Ћ'; 
-			case 'щ', 'Щ': result[i] = 'Љ'; 
-			case 'ъ', 'Ъ': result[i] = 'ђ'; 
-			case 'ы', 'Ы': result[i] = '‘'; 
-			case 'ь', 'Ь': result[i] = '’'; 
-			case 'э', 'Э': result[i] = '“'; 
-			case 'ю', 'Ю': result[i] = '”'; 
-			case 'я', 'Я': result[i] = '•'; 
+			case 'Р°', 'Рђ': result[i] = 'A'; 
+			case 'Р±', 'Р‘': result[i] = 'Р‚'; 
+			case 'РІ', 'Р’': result[i] = 'B'; 
+			case 'Рі', 'Р“': result[i] = 'вЂљ'; 
+			case 'Рґ', 'Р”': result[i] = 'С“'; 
+			case 'Рµ', 'Р•': result[i] = 'E'; 
+			case 'С‘', 'РЃ': result[i] = 'E'; 
+			case 'Р¶', 'Р–': result[i] = 'вЂћ'; 
+			case 'Р·', 'Р—': result[i] = '3'; 
+			case 'Рё', 'Р': result[i] = 'вЂ¦'; 
+			case 'Р№', 'Р™': result[i] = 'вЂ '; 
+			case 'Рє', 'Рљ': result[i] = 'K'; 
+			case 'Р»', 'Р›': result[i] = 'вЂЎ'; 
+			case 'Рј', 'Рњ': result[i] = 'M'; 
+			case 'РЅ', 'Рќ': result[i] = 'H'; 
+			case 'Рѕ', 'Рћ': result[i] = 'O'; 
+			case 'Рї', 'Рџ': result[i] = 'РЉ'; 
+			case 'СЂ', 'Р ': result[i] = 'P'; 
+			case 'СЃ', 'РЎ': result[i] = 'C'; 
+			case 'С‚', 'Рў': result[i] = 'T'; 
+			case 'Сѓ', 'РЈ': result[i] = 'Y'; 
+			case 'С„', 'Р¤': result[i] = 'Рѓ'; 
+			case 'С…', 'РҐ': result[i] = 'X'; 
+			case 'С†', 'Р¦': result[i] = 'вЂ°'; 
+			case 'С‡', 'Р§': result[i] = 'РЊ'; 
+			case 'С€', 'РЁ': result[i] = 'Р‹'; 
+			case 'С‰', 'Р©': result[i] = 'Р‰'; 
+			case 'СЉ', 'РЄ': result[i] = 'С’'; 
+			case 'С‹', 'Р«': result[i] = 'вЂ'; 
+			case 'СЊ', 'Р¬': result[i] = 'вЂ™'; 
+			case 'СЌ', 'Р­': result[i] = 'вЂњ'; 
+			case 'СЋ', 'Р®': result[i] = 'вЂќ'; 
+			case 'СЏ', 'РЇ': result[i] = 'вЂў'; 
 			default: result[i] = string[i]; 
 		}
 	}
@@ -332,7 +332,7 @@ stock isRusChar(const text[])
 	{
 		switch(text[i])
 		{
-			case 'А'..'Я','а'..'я': return true;
+			case 'Рђ'..'РЇ','Р°'..'СЏ': return true;
 		}
 	}
 	return false;
@@ -409,7 +409,7 @@ stock isMatString(const text[])
 	{
 		switch(string[i])
 		{
-			case 'a'..'z','а'..'я','A'..'Z','А'..'Я': { }
+			case 'a'..'z','Р°'..'СЏ','A'..'Z','Рђ'..'РЇ': { }
 			default: strdel(string, i, i + 1);
 		}
 	}
@@ -428,7 +428,7 @@ stock EditTextOrfogram(const text[])
 	strmid(string, text, 0, sizeof(string));
 	switch(string[0])
 	{
-		case 'a'..'z','а'..'я': string[0] = string[0]-32;
+		case 'a'..'z','Р°'..'СЏ': string[0] = string[0]-32;
 	}
 	switch(string[strlen(string)-1])
 	{
@@ -445,39 +445,39 @@ stock ToLower(const text[])
 	{
 		switch(string[i])
 		{
-			case 'А': string[i] = 'а';
-			case 'Б': string[i] = 'б';
-			case 'В': string[i] = 'в';
-			case 'Г': string[i] = 'г';
-			case 'Д': string[i] = 'д';
-			case 'Е': string[i] = 'е';
-			case 'Ё': string[i] = 'ё';
-			case 'Ж': string[i] = 'ж';
-			case 'З': string[i] = 'з';
-			case 'И': string[i] = 'и';
-			case 'Й': string[i] = 'й';
-			case 'К': string[i] = 'к';
-			case 'Л': string[i] = 'л';
-			case 'М': string[i] = 'м';
-			case 'Н': string[i] = 'н';
-			case 'О': string[i] = 'о';
-			case 'П': string[i] = 'п';
-			case 'Р': string[i] = 'р';
-			case 'С': string[i] = 'с';
-			case 'Т': string[i] = 'т';
-			case 'У': string[i] = 'у';
-			case 'Ф': string[i] = 'ф';
-			case 'Х': string[i] = 'х';
-			case 'Ц': string[i] = 'ц';
-			case 'Ч': string[i] = 'ч';
-			case 'Ш': string[i] = 'ш';
-			case 'Щ': string[i] = 'щ';
-			case 'Ъ': string[i] = 'ъ';
-			case 'Ы': string[i] = 'ы';
-			case 'Ь': string[i] = 'ь';
-			case 'Э': string[i] = 'э';
-			case 'Ю': string[i] = 'ю';
-			case 'Я': string[i] = 'я';
+			case 'Рђ': string[i] = 'Р°';
+			case 'Р‘': string[i] = 'Р±';
+			case 'Р’': string[i] = 'РІ';
+			case 'Р“': string[i] = 'Рі';
+			case 'Р”': string[i] = 'Рґ';
+			case 'Р•': string[i] = 'Рµ';
+			case 'РЃ': string[i] = 'С‘';
+			case 'Р–': string[i] = 'Р¶';
+			case 'Р—': string[i] = 'Р·';
+			case 'Р': string[i] = 'Рё';
+			case 'Р™': string[i] = 'Р№';
+			case 'Рљ': string[i] = 'Рє';
+			case 'Р›': string[i] = 'Р»';
+			case 'Рњ': string[i] = 'Рј';
+			case 'Рќ': string[i] = 'РЅ';
+			case 'Рћ': string[i] = 'Рѕ';
+			case 'Рџ': string[i] = 'Рї';
+			case 'Р ': string[i] = 'СЂ';
+			case 'РЎ': string[i] = 'СЃ';
+			case 'Рў': string[i] = 'С‚';
+			case 'РЈ': string[i] = 'Сѓ';
+			case 'Р¤': string[i] = 'С„';
+			case 'РҐ': string[i] = 'С…';
+			case 'Р¦': string[i] = 'С†';
+			case 'Р§': string[i] = 'С‡';
+			case 'РЁ': string[i] = 'С€';
+			case 'Р©': string[i] = 'С‰';
+			case 'РЄ': string[i] = 'СЉ';
+			case 'Р«': string[i] = 'С‹';
+			case 'Р¬': string[i] = 'СЊ';
+			case 'Р­': string[i] = 'СЌ';
+			case 'Р®': string[i] = 'СЋ';
+			case 'РЇ': string[i] = 'СЏ';
 			case 'A': string[i] = 'a';
 			case 'B': string[i] = 'b';
 			case 'C': string[i] = 'c';
@@ -532,7 +532,7 @@ stock SendMe(playerid, const text[])
 }
 stock ErrorSCM(playerid, const text[], color = COLOR_RED)
 {
-	new string[200] = "[Ошибка]{FFFFFF}: ";
+	new string[200] = "[РћС€РёР±РєР°]{FFFFFF}: ";
 	strcat(string, text), strcat(string, ".");
 	if(strlen(string) > 127)
 	{
@@ -547,7 +547,7 @@ stock ErrorSCM(playerid, const text[], color = COLOR_RED)
 }
 stock HelpSCM(playerid, const text[], color = COLOR_YELLOW)
 {
-	new string[300] = "[Подсказка]{FFFFFF}: ";
+	new string[300] = "[РџРѕРґСЃРєР°Р·РєР°]{FFFFFF}: ";
 	strcat(string, text), strcat(string, ".");
 	if(strlen(string) > 127)
 	{
@@ -562,7 +562,7 @@ stock HelpSCM(playerid, const text[], color = COLOR_YELLOW)
 }
 stock YesSCM(playerid, const text[], color = COLOR_GREEN)
 {
-	new string[300] = "[Успешно]{FFFFFF}: ";
+	new string[300] = "[РЈСЃРїРµС€РЅРѕ]{FFFFFF}: ";
 	strcat(string, text), strcat(string, ".");
 	if(strlen(string) > 127)
 	{
@@ -577,7 +577,7 @@ stock YesSCM(playerid, const text[], color = COLOR_GREEN)
 }
 stock MindSCM(playerid, const text[], color = COLOR_GREY)
 {
-	new string[300] = "[Важное]{FFFFFF}: ";
+	new string[300] = "[Р’Р°Р¶РЅРѕРµ]{FFFFFF}: ";
 	strcat(string, text), strcat(string, ".");
 	if(strlen(string) > 127)
 	{
@@ -592,7 +592,7 @@ stock MindSCM(playerid, const text[], color = COLOR_GREY)
 }
 stock AlertSCM(playerid, const text[], color = COLOR_ALERT)
 {
-	new string[300] = "[Оповещение]{FFFFFF}: ";
+	new string[300] = "[РћРїРѕРІРµС‰РµРЅРёРµ]{FFFFFF}: ";
 	strcat(string, text), strcat(string, ".");
 	if(strlen(string) > 127)
 	{
@@ -699,7 +699,7 @@ stock TrainChat(const text[], vv, color = COLOR_R)
 					{
 					    switch(Words[j][l])
 					    {
-					        case 'a'..'z','а'..'я','A'..'Z','А'..'Я': f(str, "*");
+					        case 'a'..'z','Р°'..'СЏ','A'..'Z','Рђ'..'РЇ': f(str, "*");
 					        default: f(str, "%s", Words[j][l]);
 					    }
 						is = !is;
@@ -708,7 +708,7 @@ stock TrainChat(const text[], vv, color = COLOR_R)
 					{
 					    switch(Words[j][l])
 					    {
-					        case 'a'..'z','а'..'я','A'..'Z','А'..'Я': f(str, "%s*", str);
+					        case 'a'..'z','Р°'..'СЏ','A'..'Z','Рђ'..'РЇ': f(str, "%s*", str);
 					        default: f(str, "%s%c", str, Words[j][l]);
 					    }
 	 				}
@@ -859,7 +859,7 @@ stock LoadStudy(playerid, work)
 	PlayerTextDrawBackgroundColor(playerid, TDP_MenuStudy[playerid][2], -2139062017);
 	PlayerTextDrawFont(playerid, TDP_MenuStudy[playerid][2], 0);
 
-	TDP_MenuStudyBtn[playerid] = CreatePlayerTextDraw(playerid, 296.000000, 196.0 + (float(row) * 54.0), FixText("НАЗАД"));
+	TDP_MenuStudyBtn[playerid] = CreatePlayerTextDraw(playerid, 296.000000, 196.0 + (float(row) * 54.0), FixText("РќРђР—РђР”"));
 	PlayerTextDrawLetterSize(playerid, TDP_MenuStudyBtn[playerid], 0.449999, 1.600000);
 	PlayerTextDrawTextSize(playerid, TDP_MenuStudyBtn[playerid], 344.799896, 16.0);
 	PlayerTextDrawAlignment(playerid, TDP_MenuStudyBtn[playerid], 1);
@@ -981,7 +981,7 @@ stock ExitGame(playerid)
 		{
 			if(get_int(i, "PosRecon") == playerid)
 			{
-				MindSCM(i, "Игрок вышел из мира");
+				MindSCM(i, "РРіСЂРѕРє РІС‹С€РµР» РёР· РјРёСЂР°");
 				ExitRecon(i);
 			}
 		}
@@ -997,10 +997,10 @@ stock ExitGame(playerid)
 	{
 		switch(Work[get_int(playerid, "PosWorkList")][eLimit])
 		{
-			case 3: PlayerTextDrawSetString(playerid, TDP_Menu[playerid][5], FixText("ДОСТУПНО С 3-ГО УРОВНЯ"));
-			case 6: PlayerTextDrawSetString(playerid, TDP_Menu[playerid][5], FixText("ДОСТУПНО С 6-ГО УРОВНЯ"));
-			case 8: PlayerTextDrawSetString(playerid, TDP_Menu[playerid][5], FixText("ДОСТУПНО С 8-ГО УРОВНЯ"));
-			case 10: PlayerTextDrawSetString(playerid, TDP_Menu[playerid][5], FixText("ДОСТУПНО С 10-ГО УРОВНЯ"));
+			case 3: PlayerTextDrawSetString(playerid, TDP_Menu[playerid][5], FixText("Р”РћРЎРўРЈРџРќРћ РЎ 3-Р“Рћ РЈР РћР’РќРЇ"));
+			case 6: PlayerTextDrawSetString(playerid, TDP_Menu[playerid][5], FixText("Р”РћРЎРўРЈРџРќРћ РЎ 6-Р“Рћ РЈР РћР’РќРЇ"));
+			case 8: PlayerTextDrawSetString(playerid, TDP_Menu[playerid][5], FixText("Р”РћРЎРўРЈРџРќРћ РЎ 8-Р“Рћ РЈР РћР’РќРЇ"));
+			case 10: PlayerTextDrawSetString(playerid, TDP_Menu[playerid][5], FixText("Р”РћРЎРўРЈРџРќРћ РЎ 10-Р“Рћ РЈР РћР’РќРЇ"));
 		}
 	}
 	else PlayerTextDrawSetString(playerid, TDP_Menu[playerid][5], "");
@@ -1136,7 +1136,7 @@ stock UpExp(playerid, exp)
 	{
 		Player[playerid][pExp] -= ExpLevel[Player[playerid][pLevel]];
 		Player[playerid][pLevel]++;
-		YesSCM(playerid, "У вас новый уровень");
+		YesSCM(playerid, "РЈ РІР°СЃ РЅРѕРІС‹Р№ СѓСЂРѕРІРµРЅСЊ");
 		switch(Player[playerid][pLevel])
 		{
 			case 3:
@@ -1310,11 +1310,11 @@ stock LeaveAdm(playerid, name[])
 	if(GetPlayerID(name) != -1)
 	{
 		new id = GetPlayerID(name);
-		f(string, "Администратор %s уволил вас из администраторской команды", GN(playerid)), MindSCM(id, string);
+		f(string, "РђРґРјРёРЅРёСЃС‚СЂР°С‚РѕСЂ %s СѓРІРѕР»РёР» РІР°СЃ РёР· Р°РґРјРёРЅРёСЃС‚СЂР°С‚РѕСЂСЃРєРѕР№ РєРѕРјР°РЅРґС‹", GN(playerid)), MindSCM(id, string);
 		SetPlayerColor(id, NickColor[Player[id][pNickColor]][eColorLong]);
 	}
 	f(string, "DELETE FROM "SQL_ADMINS" WHERE "SQL_ADMINS_ID" = %d", OffGetPlayerId(name)), Sql(string);
-	f(string, "[A] {FFFF00}Администратор %s уволил администратора %s", GN(playerid), name), AdmChat(string);
+	f(string, "[A] {FFFF00}РђРґРјРёРЅРёСЃС‚СЂР°С‚РѕСЂ %s СѓРІРѕР»РёР» Р°РґРјРёРЅРёСЃС‚СЂР°С‚РѕСЂР° %s", GN(playerid), name), AdmChat(string);
 }
 stock UpdateLabelSema(table, vv)
 {
@@ -1335,11 +1335,11 @@ stock UpdateLabelSema(table, vv)
 	}
 	switch(table)
 	{
-		case 0: f(string, "Сломанные семафоры ЖДЛС:\n");
-		case 1: f(string, "Сломанные семафоры ЖДЛВ:\n");
-		case 2: f(string, "Сломанные семафоры СЛВ:\n");
-		case 3: f(string, "Сломанные семафоры ЖДСФ:\n");
-		case 4: f(string, "Сломанные семафоры ЦЛС:\n");
+		case 0: f(string, "РЎР»РѕРјР°РЅРЅС‹Рµ СЃРµРјР°С„РѕСЂС‹ Р–Р”Р›РЎ:\n");
+		case 1: f(string, "РЎР»РѕРјР°РЅРЅС‹Рµ СЃРµРјР°С„РѕСЂС‹ Р–Р”Р›Р’:\n");
+		case 2: f(string, "РЎР»РѕРјР°РЅРЅС‹Рµ СЃРµРјР°С„РѕСЂС‹ РЎР›Р’:\n");
+		case 3: f(string, "РЎР»РѕРјР°РЅРЅС‹Рµ СЃРµРјР°С„РѕСЂС‹ Р–Р”РЎР¤:\n");
+		case 4: f(string, "РЎР»РѕРјР°РЅРЅС‹Рµ СЃРµРјР°С„РѕСЂС‹ Р¦Р›РЎ:\n");
 	}
 	for(new i; i != sizeof(sema); i++)
 	{
@@ -1348,7 +1348,7 @@ stock UpdateLabelSema(table, vv)
 			if(!is) 
 			{
 				is = true;
-				f(string, "%s№%d", string, sema[i]);
+				f(string, "%sв„–%d", string, sema[i]);
 			}
 			else f(string, "%s,%d", string, sema[i]);
 		}
@@ -1362,22 +1362,22 @@ stock UpdateLabelDriver(playerid, table, bool: null = false)
 	new string[300];
 	if(!null)
 	{
-		f(string, "Ник: %s [%d]", GN(playerid), playerid);
-		f(string, "%s\nСостав: %s", string, (get_int(playerid, "PosWorkList") == 2) ? "Товарный" : "Пассажирский");
-		f(string, "%s\nСкорость: %d", string, SpeedVehicle(playerid));
-		f(string, "%s\nМестоположение:", string);
+		f(string, "РќРёРє: %s [%d]", GN(playerid), playerid);
+		f(string, "%s\nРЎРѕСЃС‚Р°РІ: %s", string, (get_int(playerid, "PosWorkList") == 2) ? "РўРѕРІР°СЂРЅС‹Р№" : "РџР°СЃСЃР°Р¶РёСЂСЃРєРёР№");
+		f(string, "%s\nРЎРєРѕСЂРѕСЃС‚СЊ: %d", string, SpeedVehicle(playerid));
+		f(string, "%s\nРњРµСЃС‚РѕРїРѕР»РѕР¶РµРЅРёРµ:", string);
 		switch(PosDriver[playerid])
 		{
-			case 0..11: f(string, "%s\nЕдет в ЖДЛВ", string);
-			case 12: f(string, "%s\nВ ЖДЛВ", string);
-			case 13..18: f(string, "%s\nЕдет в СЛВ", string);
-			case 19: f(string, "%s\nВ СЛВ", string);
-			case 20..29: f(string, "%s\nЕдет в ЖДСФ", string);
-			case 30: f(string, "%s\nВ ЖДСФ", string);
-			case 31..40: f(string, "%s\nЕдет в ЦЛС", string);
-			case 41: f(string, "%s\nВ ЦЛС", string);
-			case 42, 43: f(string, "%s\nЕдет в ЖДЛС", string);
-			case 44: f(string, "%s\nВ ЖДЛС", string);
+			case 0..11: f(string, "%s\nР•РґРµС‚ РІ Р–Р”Р›Р’", string);
+			case 12: f(string, "%s\nР’ Р–Р”Р›Р’", string);
+			case 13..18: f(string, "%s\nР•РґРµС‚ РІ РЎР›Р’", string);
+			case 19: f(string, "%s\nР’ РЎР›Р’", string);
+			case 20..29: f(string, "%s\nР•РґРµС‚ РІ Р–Р”РЎР¤", string);
+			case 30: f(string, "%s\nР’ Р–Р”РЎР¤", string);
+			case 31..40: f(string, "%s\nР•РґРµС‚ РІ Р¦Р›РЎ", string);
+			case 41: f(string, "%s\nР’ Р¦Р›РЎ", string);
+			case 42, 43: f(string, "%s\nР•РґРµС‚ РІ Р–Р”Р›РЎ", string);
+			case 44: f(string, "%s\nР’ Р–Р”Р›РЎ", string);
 		}
 	}
 	else f(string, "-");
@@ -1460,7 +1460,7 @@ stock ExitPlayerWorld(playerid)
 							{
 								if(WorldDriverPassenger[GetPlayerVirtualWorld(p)][one]) local++;
 							}
-							MindSCM(p, "Игрок вышел из игры");
+							MindSCM(p, "РРіСЂРѕРє РІС‹С€РµР» РёР· РёРіСЂС‹");
 							if(!local)
 							{
 								KillTimer(TimerUpdateReDispatcher[p]);
@@ -1482,21 +1482,21 @@ stock ExitPlayerWorld(playerid)
 											set_int(p, "PosPanelReDriver", one);
 											new string[200];
 											f(string, "%s", GN(one)), PlayerTextDrawSetString(p, PReDispatcher[p][0], string);
-											if(get_int(one, "PosWorkList") == 2) PlayerTextDrawSetString(p, PReDispatcher[p][1], FixText("Товарный"));
-											else PlayerTextDrawSetString(p, PReDispatcher[p][1], FixText("Пассажирский"));
+											if(get_int(one, "PosWorkList") == 2) PlayerTextDrawSetString(p, PReDispatcher[p][1], FixText("РўРѕРІР°СЂРЅС‹Р№"));
+											else PlayerTextDrawSetString(p, PReDispatcher[p][1], FixText("РџР°СЃСЃР°Р¶РёСЂСЃРєРёР№"));
 											f(string, "%d", SpeedVehicle(one)), PlayerTextDrawSetString(p, PReDispatcher[p][2], string);
 											switch(PosDriver[one])
 											{
-												case 0..11: PlayerTextDrawSetString(p, PReDispatcher[p][3], FixText("Едет в ЖДЛВ"));
-												case 12: PlayerTextDrawSetString(p, PReDispatcher[p][3], FixText("В ЖДЛВ"));
-												case 13..18: PlayerTextDrawSetString(p, PReDispatcher[p][3], FixText("Едет в СЛВ"));
-												case 19: PlayerTextDrawSetString(p, PReDispatcher[p][3], FixText("В СЛВ"));
-												case 20..29: PlayerTextDrawSetString(p, PReDispatcher[p][3], FixText("Едет в ЖДСФ"));
-												case 30: PlayerTextDrawSetString(p, PReDispatcher[p][3], FixText("В ЖДСФ"));
-												case 31..40: PlayerTextDrawSetString(p, PReDispatcher[p][3], FixText("Едет в ЦЛС"));
-												case 41: PlayerTextDrawSetString(p, PReDispatcher[p][3], FixText("В ЦЛС"));
-												case 42, 43: PlayerTextDrawSetString(p, PReDispatcher[p][3], FixText("Едет в ЖДЛС"));
-												case 44: PlayerTextDrawSetString(p, PReDispatcher[p][3], FixText("В ЖДЛС"));
+												case 0..11: PlayerTextDrawSetString(p, PReDispatcher[p][3], FixText("Р•РґРµС‚ РІ Р–Р”Р›Р’"));
+												case 12: PlayerTextDrawSetString(p, PReDispatcher[p][3], FixText("Р’ Р–Р”Р›Р’"));
+												case 13..18: PlayerTextDrawSetString(p, PReDispatcher[p][3], FixText("Р•РґРµС‚ РІ РЎР›Р’"));
+												case 19: PlayerTextDrawSetString(p, PReDispatcher[p][3], FixText("Р’ РЎР›Р’"));
+												case 20..29: PlayerTextDrawSetString(p, PReDispatcher[p][3], FixText("Р•РґРµС‚ РІ Р–Р”РЎР¤"));
+												case 30: PlayerTextDrawSetString(p, PReDispatcher[p][3], FixText("Р’ Р–Р”РЎР¤"));
+												case 31..40: PlayerTextDrawSetString(p, PReDispatcher[p][3], FixText("Р•РґРµС‚ РІ Р¦Р›РЎ"));
+												case 41: PlayerTextDrawSetString(p, PReDispatcher[p][3], FixText("Р’ Р¦Р›РЎ"));
+												case 42, 43: PlayerTextDrawSetString(p, PReDispatcher[p][3], FixText("Р•РґРµС‚ РІ Р–Р”Р›РЎ"));
+												case 44: PlayerTextDrawSetString(p, PReDispatcher[p][3], FixText("Р’ Р–Р”Р›РЎ"));
 											}
 											if(IsPlayerInAnyVehicle(one)) PlayerSpectateVehicle(p, GetPlayerVehicleID(one), SPECTATE_MODE_NORMAL);
 											else PlayerSpectatePlayer(p, one, SPECTATE_MODE_NORMAL);
@@ -1518,21 +1518,21 @@ stock ExitPlayerWorld(playerid)
 												set_int(p, "PosPanelReDriver", one);
 												new string[200];
 												f(string, "%s", GN(one)), PlayerTextDrawSetString(p, PReDispatcher[p][0], string);
-												if(get_int(one, "PosWorkList") == 2) PlayerTextDrawSetString(p, PReDispatcher[p][1], FixText("Товарный"));
-												else PlayerTextDrawSetString(p, PReDispatcher[p][1], FixText("Пассажирский"));
+												if(get_int(one, "PosWorkList") == 2) PlayerTextDrawSetString(p, PReDispatcher[p][1], FixText("РўРѕРІР°СЂРЅС‹Р№"));
+												else PlayerTextDrawSetString(p, PReDispatcher[p][1], FixText("РџР°СЃСЃР°Р¶РёСЂСЃРєРёР№"));
 												f(string, "%d", SpeedVehicle(one)), PlayerTextDrawSetString(p, PReDispatcher[p][2], string);
 												switch(PosDriver[one])
 												{
-													case 0..11: PlayerTextDrawSetString(p, PReDispatcher[p][3], FixText("Едет в ЖДЛВ"));
-													case 12: PlayerTextDrawSetString(p, PReDispatcher[p][3], FixText("В ЖДЛВ"));
-													case 13..18: PlayerTextDrawSetString(p, PReDispatcher[p][3], FixText("Едет в СЛВ"));
-													case 19: PlayerTextDrawSetString(p, PReDispatcher[p][3], FixText("В СЛВ"));
-													case 20..29: PlayerTextDrawSetString(p, PReDispatcher[p][3], FixText("Едет в ЖДСФ"));
-													case 30: PlayerTextDrawSetString(p, PReDispatcher[p][3], FixText("В ЖДСФ"));
-													case 31..40: PlayerTextDrawSetString(p, PReDispatcher[p][3], FixText("Едет в ЦЛС"));
-													case 41: PlayerTextDrawSetString(p, PReDispatcher[p][3], FixText("В ЦЛС"));
-													case 42, 43: PlayerTextDrawSetString(p, PReDispatcher[p][3], FixText("Едет в ЖДЛС"));
-													case 44: PlayerTextDrawSetString(p, PReDispatcher[p][3], FixText("В ЖДЛС"));
+													case 0..11: PlayerTextDrawSetString(p, PReDispatcher[p][3], FixText("Р•РґРµС‚ РІ Р–Р”Р›Р’"));
+													case 12: PlayerTextDrawSetString(p, PReDispatcher[p][3], FixText("Р’ Р–Р”Р›Р’"));
+													case 13..18: PlayerTextDrawSetString(p, PReDispatcher[p][3], FixText("Р•РґРµС‚ РІ РЎР›Р’"));
+													case 19: PlayerTextDrawSetString(p, PReDispatcher[p][3], FixText("Р’ РЎР›Р’"));
+													case 20..29: PlayerTextDrawSetString(p, PReDispatcher[p][3], FixText("Р•РґРµС‚ РІ Р–Р”РЎР¤"));
+													case 30: PlayerTextDrawSetString(p, PReDispatcher[p][3], FixText("Р’ Р–Р”РЎР¤"));
+													case 31..40: PlayerTextDrawSetString(p, PReDispatcher[p][3], FixText("Р•РґРµС‚ РІ Р¦Р›РЎ"));
+													case 41: PlayerTextDrawSetString(p, PReDispatcher[p][3], FixText("Р’ Р¦Р›РЎ"));
+													case 42, 43: PlayerTextDrawSetString(p, PReDispatcher[p][3], FixText("Р•РґРµС‚ РІ Р–Р”Р›РЎ"));
+													case 44: PlayerTextDrawSetString(p, PReDispatcher[p][3], FixText("Р’ Р–Р”Р›РЎ"));
 												}
 												if(IsPlayerInAnyVehicle(one)) PlayerSpectateVehicle(p, GetPlayerVehicleID(one), SPECTATE_MODE_NORMAL);
 												else PlayerSpectatePlayer(p, one, SPECTATE_MODE_NORMAL);
@@ -1595,7 +1595,7 @@ stock ExitPlayerWorld(playerid)
 							{
 								if(WorldDriverPassenger[GetPlayerVirtualWorld(p)][one]) local++;
 							}
-							MindSCM(p, "Игрок вышел из игры");
+							MindSCM(p, "РРіСЂРѕРє РІС‹С€РµР» РёР· РёРіСЂС‹");
 							if(!local)
 							{
 								KillTimer(TimerUpdateReDispatcher[p]);
@@ -1617,21 +1617,21 @@ stock ExitPlayerWorld(playerid)
 											set_int(p, "PosPanelReDriver", one);
 											new string[200];
 											f(string, "%s", GN(one)), PlayerTextDrawSetString(p, PReDispatcher[p][0], string);
-											if(get_int(one, "PosWorkList") == 2) PlayerTextDrawSetString(p, PReDispatcher[p][1], FixText("Товарный"));
-											else PlayerTextDrawSetString(p, PReDispatcher[p][1], FixText("Пассажирский"));
+											if(get_int(one, "PosWorkList") == 2) PlayerTextDrawSetString(p, PReDispatcher[p][1], FixText("РўРѕРІР°СЂРЅС‹Р№"));
+											else PlayerTextDrawSetString(p, PReDispatcher[p][1], FixText("РџР°СЃСЃР°Р¶РёСЂСЃРєРёР№"));
 											f(string, "%d", SpeedVehicle(one)), PlayerTextDrawSetString(p, PReDispatcher[p][2], string);
 											switch(PosDriver[one])
 											{
-												case 0..11: PlayerTextDrawSetString(p, PReDispatcher[p][3], FixText("Едет в ЖДЛВ"));
-												case 12: PlayerTextDrawSetString(p, PReDispatcher[p][3], FixText("В ЖДЛВ"));
-												case 13..18: PlayerTextDrawSetString(p, PReDispatcher[p][3], FixText("Едет в СЛВ"));
-												case 19: PlayerTextDrawSetString(p, PReDispatcher[p][3], FixText("В СЛВ"));
-												case 20..29: PlayerTextDrawSetString(p, PReDispatcher[p][3], FixText("Едет в ЖДСФ"));
-												case 30: PlayerTextDrawSetString(p, PReDispatcher[p][3], FixText("В ЖДСФ"));
-												case 31..40: PlayerTextDrawSetString(p, PReDispatcher[p][3], FixText("Едет в ЦЛС"));
-												case 41: PlayerTextDrawSetString(p, PReDispatcher[p][3], FixText("В ЦЛС"));
-												case 42, 43: PlayerTextDrawSetString(p, PReDispatcher[p][3], FixText("Едет в ЖДЛС"));
-												case 44: PlayerTextDrawSetString(p, PReDispatcher[p][3], FixText("В ЖДЛС"));
+												case 0..11: PlayerTextDrawSetString(p, PReDispatcher[p][3], FixText("Р•РґРµС‚ РІ Р–Р”Р›Р’"));
+												case 12: PlayerTextDrawSetString(p, PReDispatcher[p][3], FixText("Р’ Р–Р”Р›Р’"));
+												case 13..18: PlayerTextDrawSetString(p, PReDispatcher[p][3], FixText("Р•РґРµС‚ РІ РЎР›Р’"));
+												case 19: PlayerTextDrawSetString(p, PReDispatcher[p][3], FixText("Р’ РЎР›Р’"));
+												case 20..29: PlayerTextDrawSetString(p, PReDispatcher[p][3], FixText("Р•РґРµС‚ РІ Р–Р”РЎР¤"));
+												case 30: PlayerTextDrawSetString(p, PReDispatcher[p][3], FixText("Р’ Р–Р”РЎР¤"));
+												case 31..40: PlayerTextDrawSetString(p, PReDispatcher[p][3], FixText("Р•РґРµС‚ РІ Р¦Р›РЎ"));
+												case 41: PlayerTextDrawSetString(p, PReDispatcher[p][3], FixText("Р’ Р¦Р›РЎ"));
+												case 42, 43: PlayerTextDrawSetString(p, PReDispatcher[p][3], FixText("Р•РґРµС‚ РІ Р–Р”Р›РЎ"));
+												case 44: PlayerTextDrawSetString(p, PReDispatcher[p][3], FixText("Р’ Р–Р”Р›РЎ"));
 											}
 											if(IsPlayerInAnyVehicle(one)) PlayerSpectateVehicle(p, GetPlayerVehicleID(one), SPECTATE_MODE_NORMAL);
 											else PlayerSpectatePlayer(p, one, SPECTATE_MODE_NORMAL);
@@ -1653,21 +1653,21 @@ stock ExitPlayerWorld(playerid)
 												set_int(p, "PosPanelReDriver", one);
 												new string[200];
 												f(string, "%s", GN(one)), PlayerTextDrawSetString(p, PReDispatcher[p][0], string);
-												if(get_int(one, "PosWorkList") == 2) PlayerTextDrawSetString(p, PReDispatcher[p][1], FixText("Товарный"));
-												else PlayerTextDrawSetString(p, PReDispatcher[p][1], FixText("Пассажирский"));
+												if(get_int(one, "PosWorkList") == 2) PlayerTextDrawSetString(p, PReDispatcher[p][1], FixText("РўРѕРІР°СЂРЅС‹Р№"));
+												else PlayerTextDrawSetString(p, PReDispatcher[p][1], FixText("РџР°СЃСЃР°Р¶РёСЂСЃРєРёР№"));
 												f(string, "%d", SpeedVehicle(one)), PlayerTextDrawSetString(p, PReDispatcher[p][2], string);
 												switch(PosDriver[one])
 												{
-													case 0..11: PlayerTextDrawSetString(p, PReDispatcher[p][3], FixText("Едет в ЖДЛВ"));
-													case 12: PlayerTextDrawSetString(p, PReDispatcher[p][3], FixText("В ЖДЛВ"));
-													case 13..18: PlayerTextDrawSetString(p, PReDispatcher[p][3], FixText("Едет в СЛВ"));
-													case 19: PlayerTextDrawSetString(p, PReDispatcher[p][3], FixText("В СЛВ"));
-													case 20..29: PlayerTextDrawSetString(p, PReDispatcher[p][3], FixText("Едет в ЖДСФ"));
-													case 30: PlayerTextDrawSetString(p, PReDispatcher[p][3], FixText("В ЖДСФ"));
-													case 31..40: PlayerTextDrawSetString(p, PReDispatcher[p][3], FixText("Едет в ЦЛС"));
-													case 41: PlayerTextDrawSetString(p, PReDispatcher[p][3], FixText("В ЦЛС"));
-													case 42, 43: PlayerTextDrawSetString(p, PReDispatcher[p][3], FixText("Едет в ЖДЛС"));
-													case 44: PlayerTextDrawSetString(p, PReDispatcher[p][3], FixText("В ЖДЛС"));
+													case 0..11: PlayerTextDrawSetString(p, PReDispatcher[p][3], FixText("Р•РґРµС‚ РІ Р–Р”Р›Р’"));
+													case 12: PlayerTextDrawSetString(p, PReDispatcher[p][3], FixText("Р’ Р–Р”Р›Р’"));
+													case 13..18: PlayerTextDrawSetString(p, PReDispatcher[p][3], FixText("Р•РґРµС‚ РІ РЎР›Р’"));
+													case 19: PlayerTextDrawSetString(p, PReDispatcher[p][3], FixText("Р’ РЎР›Р’"));
+													case 20..29: PlayerTextDrawSetString(p, PReDispatcher[p][3], FixText("Р•РґРµС‚ РІ Р–Р”РЎР¤"));
+													case 30: PlayerTextDrawSetString(p, PReDispatcher[p][3], FixText("Р’ Р–Р”РЎР¤"));
+													case 31..40: PlayerTextDrawSetString(p, PReDispatcher[p][3], FixText("Р•РґРµС‚ РІ Р¦Р›РЎ"));
+													case 41: PlayerTextDrawSetString(p, PReDispatcher[p][3], FixText("Р’ Р¦Р›РЎ"));
+													case 42, 43: PlayerTextDrawSetString(p, PReDispatcher[p][3], FixText("Р•РґРµС‚ РІ Р–Р”Р›РЎ"));
+													case 44: PlayerTextDrawSetString(p, PReDispatcher[p][3], FixText("Р’ Р–Р”Р›РЎ"));
 												}
 												if(IsPlayerInAnyVehicle(one)) PlayerSpectateVehicle(p, GetPlayerVehicleID(one), SPECTATE_MODE_NORMAL);
 												else PlayerSpectatePlayer(p, one, SPECTATE_MODE_NORMAL);
@@ -1985,12 +1985,12 @@ stock LoadOrderDriver(playerid)
 	set_int(playerid, "DriverPurpose", station);
 	set_int(playerid, "DriverPurpose1", station1);
 	PlayerTextDrawSetString(playerid, PTDCargo[playerid][0], "0/50000");
-	PlayerTextDrawSetString(playerid, PTDCargo[playerid][1], FixText("ЗАГРУЗКА B"));
+	PlayerTextDrawSetString(playerid, PTDCargo[playerid][1], FixText("Р—РђР“Р РЈР—РљРђ B"));
 	switch(station)
 	{
 		case 0: 
 		{
-			PlayerTextDrawSetString(playerid, PTDCargo[playerid][2], FixText("ЖДЛС"));
+			PlayerTextDrawSetString(playerid, PTDCargo[playerid][2], FixText("Р–Р”Р›РЎ"));
 			if(0 <= PosDriver[playerid] <= 11 || PosDriver[playerid] == 44) price = LS_LV + LV_NLV + NLV_SF + SF_CLS + CLS_LS;
 			else if(12 <= PosDriver[playerid] <= 18) price = LV_NLV + NLV_SF + SF_CLS + CLS_LS;
 			else if(19 <= PosDriver[playerid] <= 29) price = NLV_SF + SF_CLS + CLS_LS;
@@ -2003,7 +2003,7 @@ stock LoadOrderDriver(playerid)
 		}
 		case 1: 
 		{
-			PlayerTextDrawSetString(playerid, PTDCargo[playerid][2], FixText("ЖДЛВ"));
+			PlayerTextDrawSetString(playerid, PTDCargo[playerid][2], FixText("Р–Р”Р›Р’"));
 			if(12 <= PosDriver[playerid] <= 18) price = LV_NLV + NLV_SF + SF_CLS + CLS_LS + LS_LV;
 			else if(19 <= PosDriver[playerid] <= 29) price = NLV_SF + SF_CLS + CLS_LS + LS_LV;
 			else if(30 <= PosDriver[playerid] <= 40) price = SF_CLS + CLS_LS + LS_LV;
@@ -2016,7 +2016,7 @@ stock LoadOrderDriver(playerid)
 		}
 		case 2: 
 		{
-			PlayerTextDrawSetString(playerid, PTDCargo[playerid][2], FixText("СЛВ"));
+			PlayerTextDrawSetString(playerid, PTDCargo[playerid][2], FixText("РЎР›Р’"));
 			if(19 <= PosDriver[playerid] <= 29) price = NLV_SF + SF_CLS + CLS_LS + LS_LV + LV_NLV;
 			else if(30 <= PosDriver[playerid] <= 40) price = SF_CLS + CLS_LS + LS_LV + LV_NLV;
 			else if(41 <= PosDriver[playerid] <= 43) price = CLS_LS + LS_LV + LV_NLV;
@@ -2029,7 +2029,7 @@ stock LoadOrderDriver(playerid)
 		}
 		case 3: 
 		{
-			PlayerTextDrawSetString(playerid, PTDCargo[playerid][2], FixText("ЖДСФ"));
+			PlayerTextDrawSetString(playerid, PTDCargo[playerid][2], FixText("Р–Р”РЎР¤"));
 			if(30 <= PosDriver[playerid] <= 40) price = SF_CLS + CLS_LS + LS_LV + LV_NLV + NLV_SF;
 			else if(41 <= PosDriver[playerid] <= 43) price = CLS_LS + LS_LV + LV_NLV + NLV_SF;
 			else if(0 <= PosDriver[playerid] <= 11 || PosDriver[playerid] == 44) price = LS_LV + LV_NLV + NLV_SF;
@@ -2042,7 +2042,7 @@ stock LoadOrderDriver(playerid)
 		}
 		case 4: 
 		{
-			PlayerTextDrawSetString(playerid, PTDCargo[playerid][2], FixText("ЦЛС"));
+			PlayerTextDrawSetString(playerid, PTDCargo[playerid][2], FixText("Р¦Р›РЎ"));
 			if(41 <= PosDriver[playerid] <= 43) price = CLS_LS + LS_LV + LV_NLV + NLV_SF + SF_CLS;
 			else if(0 <= PosDriver[playerid] <= 11 || PosDriver[playerid] == 44) price = LS_LV + LV_NLV + NLV_SF + SF_CLS;
 			else if(12 <= PosDriver[playerid] <= 18) price = LV_NLV + NLV_SF + SF_CLS;
@@ -2243,14 +2243,14 @@ stock NextRecon(playerid)
 stock Dialog_PAdmin(playerid)
 {
 	new string[200];
-	f(string, "Назначить нового администратора");
-	f(string, "%s\nСписок администраторов", string);
-	f(string, "%s\nСистема Анти-Мата", string);
-	return SPD(playerid, dPAdmin, DSL, "Админ-панель", string, "Далее", "Выход");
+	f(string, "РќР°Р·РЅР°С‡РёС‚СЊ РЅРѕРІРѕРіРѕ Р°РґРјРёРЅРёСЃС‚СЂР°С‚РѕСЂР°");
+	f(string, "%s\nРЎРїРёСЃРѕРє Р°РґРјРёРЅРёСЃС‚СЂР°С‚РѕСЂРѕРІ", string);
+	f(string, "%s\nРЎРёСЃС‚РµРјР° РђРЅС‚Рё-РњР°С‚Р°", string);
+	return SPD(playerid, dPAdmin, DSL, "РђРґРјРёРЅ-РїР°РЅРµР»СЊ", string, "Р”Р°Р»РµРµ", "Р’С‹С…РѕРґ");
 }
 stock Dialog_PAdmin_AddAdmin(playerid)
 {
-	return SPD(playerid, dPAdmin_AddAdm, DSI, "Назначение", "{FFFFFF}Введите ID либо Никнейм игрока которого хотите назначить:", "Назначить", "Назад");
+	return SPD(playerid, dPAdmin_AddAdm, DSI, "РќР°Р·РЅР°С‡РµРЅРёРµ", "{FFFFFF}Р’РІРµРґРёС‚Рµ ID Р»РёР±Рѕ РќРёРєРЅРµР№Рј РёРіСЂРѕРєР° РєРѕС‚РѕСЂРѕРіРѕ С…РѕС‚РёС‚Рµ РЅР°Р·РЅР°С‡РёС‚СЊ:", "РќР°Р·РЅР°С‡РёС‚СЊ", "РќР°Р·Р°Рґ");
 }
 stock Dialog_PAdmin_ListAdmin(playerid)
 {
@@ -2258,18 +2258,18 @@ stock Dialog_PAdmin_ListAdmin(playerid)
 }
 stock Dialog_PAdmin_ListAdmin_Find(playerid)
 {
-	return SPD(playerid, dPAdmin_ListAdm_Find, DSI, "Поиск", "{FFFFFF}Введите никнейм или часть никнейма:", "Найти", "Назад");
+	return SPD(playerid, dPAdmin_ListAdm_Find, DSI, "РџРѕРёСЃРє", "{FFFFFF}Р’РІРµРґРёС‚Рµ РЅРёРєРЅРµР№Рј РёР»Рё С‡Р°СЃС‚СЊ РЅРёРєРЅРµР№РјР°:", "РќР°Р№С‚Рё", "РќР°Р·Р°Рґ");
 }
 stock Dialog_PAdmin_ListAdmin_Param(playerid, name[])
 {
 	new string[500];
 	set_string(playerid, "SelectListAdmin", name);
-	f(string, "{FFFF00}Статистика");
-	f(string, "%s\n{2DE019}Повысить{FFFFFF}/{FF4530}Понизить {FFFFFF}администратора", string);
-	f(string, "%s\n{FF4530}Выдать выговор", string);
-	f(string, "%s\n{2DE019}Снять выговор", string);
-	f(string, "%s\n{FF4530}Уволить", string);
-	return SPD(playerid, dPAdmin_ListAdm_Panel, DSL, name, string, "Выбрать", "Назад");
+	f(string, "{FFFF00}РЎС‚Р°С‚РёСЃС‚РёРєР°");
+	f(string, "%s\n{2DE019}РџРѕРІС‹СЃРёС‚СЊ{FFFFFF}/{FF4530}РџРѕРЅРёР·РёС‚СЊ {FFFFFF}Р°РґРјРёРЅРёСЃС‚СЂР°С‚РѕСЂР°", string);
+	f(string, "%s\n{FF4530}Р’С‹РґР°С‚СЊ РІС‹РіРѕРІРѕСЂ", string);
+	f(string, "%s\n{2DE019}РЎРЅСЏС‚СЊ РІС‹РіРѕРІРѕСЂ", string);
+	f(string, "%s\n{FF4530}РЈРІРѕР»РёС‚СЊ", string);
+	return SPD(playerid, dPAdmin_ListAdm_Panel, DSL, name, string, "Р’С‹Р±СЂР°С‚СЊ", "РќР°Р·Р°Рґ");
 }
 stock Dialog_PAdm_ListAdm_Param_St(playerid)
 {
@@ -2280,7 +2280,7 @@ stock Dialog_PAdm_ListAdm_Param_St(playerid)
 }
 stock ErrorAdmPanel(playerid)
 {
-	ErrorSCM(playerid, "Произошла ошибка, повторите снова");
+	ErrorSCM(playerid, "РџСЂРѕРёР·РѕС€Р»Р° РѕС€РёР±РєР°, РїРѕРІС‚РѕСЂРёС‚Рµ СЃРЅРѕРІР°");
 	return Dialog_PAdmin(playerid);
 }
 stock Dialog_PAdm_ListAdm_Param_Level(playerid)
@@ -2305,7 +2305,7 @@ stock Dialog_PAdm_ListAdm_Param_Level(playerid)
 			else f(string, "%s\n{FFFFFF}%s", string, NameLevelAdm[i]);
 		}
 	}
-	return SPD(playerid, dPAdmin_ListAdm_Panel_Level, DSL, name, string, "Принять", "Назад");
+	return SPD(playerid, dPAdmin_ListAdm_Panel_Level, DSL, name, string, "РџСЂРёРЅСЏС‚СЊ", "РќР°Р·Р°Рґ");
 }
 stock Dialog_PAdm_ListAdm_Param_Vig(playerid)
 {
@@ -2331,19 +2331,19 @@ stock Dialog_PAdm_ListAdm_Param_Leave(playerid)
 	if(cache_is_valid(res)) cache_delete(res);
 	if(level >= GetAdmin(playerid) && strcmp(GN(playerid), SCRIPT))
 	{
-		ErrorSCM(playerid, "Вы не можете уволить этого администратора");
+		ErrorSCM(playerid, "Р’С‹ РЅРµ РјРѕР¶РµС‚Рµ СѓРІРѕР»РёС‚СЊ СЌС‚РѕРіРѕ Р°РґРјРёРЅРёСЃС‚СЂР°С‚РѕСЂР°");
 		return Dialog_PAdmin_ListAdmin_Param(playerid, name);
 	}
-	f(string, "{FFFFFF}Вы действительно хотите уволить администратора {FFFF00}%s{FFFFFF}?", name);
-	return SPD(playerid, dPAdmin_ListAdm_Panel_Leave, DSM, "Подтверждение", string, "Уволить", "Назад");
+	f(string, "{FFFFFF}Р’С‹ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ С…РѕС‚РёС‚Рµ СѓРІРѕР»РёС‚СЊ Р°РґРјРёРЅРёСЃС‚СЂР°С‚РѕСЂР° {FFFF00}%s{FFFFFF}?", name);
+	return SPD(playerid, dPAdmin_ListAdm_Panel_Leave, DSM, "РџРѕРґС‚РІРµСЂР¶РґРµРЅРёРµ", string, "РЈРІРѕР»РёС‚СЊ", "РќР°Р·Р°Рґ");
 }
 stock Dialog_PAdmin_AntiMat(playerid)
 {
 	new string[200];
-	f(string, "Список нецензурных слов");
-	f(string, "%s\nДобавить нецензурное слово в список", string);
-	f(string, "%s\nУбрать нецензурное слово из списка", string);
-	return SPD(playerid, dPAdmin_AntiMat, DSL, "Настроки Анти-Мата", string, "Далее", "Назад");
+	f(string, "РЎРїРёСЃРѕРє РЅРµС†РµРЅР·СѓСЂРЅС‹С… СЃР»РѕРІ");
+	f(string, "%s\nР”РѕР±Р°РІРёС‚СЊ РЅРµС†РµРЅР·СѓСЂРЅРѕРµ СЃР»РѕРІРѕ РІ СЃРїРёСЃРѕРє", string);
+	f(string, "%s\nРЈР±СЂР°С‚СЊ РЅРµС†РµРЅР·СѓСЂРЅРѕРµ СЃР»РѕРІРѕ РёР· СЃРїРёСЃРєР°", string);
+	return SPD(playerid, dPAdmin_AntiMat, DSL, "РќР°СЃС‚СЂРѕРєРё РђРЅС‚Рё-РњР°С‚Р°", string, "Р”Р°Р»РµРµ", "РќР°Р·Р°Рґ");
 }
 stock Dialog_PAdmin_AntiMat_L(playerid)
 {
@@ -2361,23 +2361,23 @@ stock Dialog_PAdmin_AntiMat_L(playerid)
 			else f(string, "%s\n%s", string, AntiMatWords[i]);
 		}
 	}
-	return SPD(playerid, dPAdmin_AntiMat_L, DSL, "Настроки Анти-Мата", string, "Выход", "Назад");
+	return SPD(playerid, dPAdmin_AntiMat_L, DSL, "РќР°СЃС‚СЂРѕРєРё РђРЅС‚Рё-РњР°С‚Р°", string, "Р’С‹С…РѕРґ", "РќР°Р·Р°Рґ");
 }
 stock Dialog_PAdmin_AntiMat_Add(playerid)
 {
 	new string[300];
-	f(string, "{FFFFFF}Введите нецензурное слово, которое вы хотите добавить в список:");
-	f(string, "%s\n\n{F19E18}Примечание:", string);
-	f(string, "%s\n{F19E18}- В слове должно быть не менее 2-х символов и не более 32-х.", string);
-	return SPD(playerid, dPAdmin_AntiMat_Add, DSI, "Настроки Анти-Мата", string, "Добавить", "Назад");
+	f(string, "{FFFFFF}Р’РІРµРґРёС‚Рµ РЅРµС†РµРЅР·СѓСЂРЅРѕРµ СЃР»РѕРІРѕ, РєРѕС‚РѕСЂРѕРµ РІС‹ С…РѕС‚РёС‚Рµ РґРѕР±Р°РІРёС‚СЊ РІ СЃРїРёСЃРѕРє:");
+	f(string, "%s\n\n{F19E18}РџСЂРёРјРµС‡Р°РЅРёРµ:", string);
+	f(string, "%s\n{F19E18}- Р’ СЃР»РѕРІРµ РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ РЅРµ РјРµРЅРµРµ 2-С… СЃРёРјРІРѕР»РѕРІ Рё РЅРµ Р±РѕР»РµРµ 32-С….", string);
+	return SPD(playerid, dPAdmin_AntiMat_Add, DSI, "РќР°СЃС‚СЂРѕРєРё РђРЅС‚Рё-РњР°С‚Р°", string, "Р”РѕР±Р°РІРёС‚СЊ", "РќР°Р·Р°Рґ");
 }
 stock Dialog_PAdmin_AntiMat_Del(playerid)
 {
 	new string[300];
-	f(string, "{FFFFFF}Введите нецензурное слово, которое вы хотите удалить из списка:");
-	f(string, "%s\n\n{F19E18}Примечание:", string);
-	f(string, "%s\n{F19E18}- В слове должно быть не менее 2-х символов и не более 32-х.", string);
-	return SPD(playerid, dPAdmin_AntiMat_Del, DSI, "Настроки Анти-Мата", string, "Удалить", "Назад");
+	f(string, "{FFFFFF}Р’РІРµРґРёС‚Рµ РЅРµС†РµРЅР·СѓСЂРЅРѕРµ СЃР»РѕРІРѕ, РєРѕС‚РѕСЂРѕРµ РІС‹ С…РѕС‚РёС‚Рµ СѓРґР°Р»РёС‚СЊ РёР· СЃРїРёСЃРєР°:");
+	f(string, "%s\n\n{F19E18}РџСЂРёРјРµС‡Р°РЅРёРµ:", string);
+	f(string, "%s\n{F19E18}- Р’ СЃР»РѕРІРµ РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ РЅРµ РјРµРЅРµРµ 2-С… СЃРёРјРІРѕР»РѕРІ Рё РЅРµ Р±РѕР»РµРµ 32-С….", string);
+	return SPD(playerid, dPAdmin_AntiMat_Del, DSI, "РќР°СЃС‚СЂРѕРєРё РђРЅС‚Рё-РњР°С‚Р°", string, "РЈРґР°Р»РёС‚СЊ", "РќР°Р·Р°Рґ");
 }
 stock Dialog_LoadPquery_Station(playerid)
 {
@@ -2390,11 +2390,11 @@ stock Dialog_LoadPquery_Station(playerid)
 			f(str, "ListTqueryStation%d", local++), set_string(playerid, str, GN(i));
 			switch(PosDriver[i])
 			{
-				case 44: text = "ЖДЛС";
-				case 12: text = "ЖДЛВ";
-				case 19: text = "СЛВ";
-				case 30: text = "ЖДСФ";
-				case 41: text = "ЦЛС";
+				case 44: text = "Р–Р”Р›РЎ";
+				case 12: text = "Р–Р”Р›Р’";
+				case 19: text = "РЎР›Р’";
+				case 30: text = "Р–Р”РЎР¤";
+				case 41: text = "Р¦Р›РЎ";
 			}
 			if(!is) 
 			{
@@ -2404,8 +2404,8 @@ stock Dialog_LoadPquery_Station(playerid)
 			else f(string, "%s\n%s\t%s", string, GN(i), text);
 		}
 	}
-	if(!local) ErrorSCM(playerid, "Никто не оставлял запрос");
-	else SPD(playerid, dPquery_Station, DST, "Список запросов", string, "Разрешить", "Назад");
+	if(!local) ErrorSCM(playerid, "РќРёРєС‚Рѕ РЅРµ РѕСЃС‚Р°РІР»СЏР» Р·Р°РїСЂРѕСЃ");
+	else SPD(playerid, dPquery_Station, DST, "РЎРїРёСЃРѕРє Р·Р°РїСЂРѕСЃРѕРІ", string, "Р Р°Р·СЂРµС€РёС‚СЊ", "РќР°Р·Р°Рґ");
 }
 stock Dialog_LoadPquery_Sema(playerid)
 {
@@ -2432,50 +2432,50 @@ stock Dialog_LoadPquery_Sema(playerid)
 			}
 			if(!is) 
 			{
-				f(string, "%s\t%s", GN(i), (check_) ? "Запрещен проезд" : "Разрешен проезд");
+				f(string, "%s\t%s", GN(i), (check_) ? "Р—Р°РїСЂРµС‰РµРЅ РїСЂРѕРµР·Рґ" : "Р Р°Р·СЂРµС€РµРЅ РїСЂРѕРµР·Рґ");
 				is = true;
 			}
 			else f(string, "%s\n%s\t%s", string, GN(i), text);
 		}
 	}
-	if(!local) ErrorSCM(playerid, "Никто не оставлял запрос");
-	else SPD(playerid, dPquery_Sema, DST, "Список запросов", string, "Разрешить", "Назад");
+	if(!local) ErrorSCM(playerid, "РќРёРєС‚Рѕ РЅРµ РѕСЃС‚Р°РІР»СЏР» Р·Р°РїСЂРѕСЃ");
+	else SPD(playerid, dPquery_Sema, DST, "РЎРїРёСЃРѕРє Р·Р°РїСЂРѕСЃРѕРІ", string, "Р Р°Р·СЂРµС€РёС‚СЊ", "РќР°Р·Р°Рґ");
 }
 stock Dialog_Settings(playerid)
 {
 	new string[500];
-	f(string, "Параметр\tСтатус");
-	f(string, "%s\nДействия администрации\t%s", string, (Player[playerid][pSAdmAction]) ? "{FFAA9B}Отключен" : "{ABFF87}Включен");
-	f(string, "%s\nПодсказки\t%s", string, (Player[playerid][pSTips]) ? "{FFAA9B}Отключен" : "{ABFF87}Включен");
-	f(string, "%s\nАвтоисправление текста\t%s", string, (Player[playerid][pSTextCorrection]) ? "{ABFF87}Включен" : "{FFAA9B}Отключен");
-	f(string, "%s\nАнти-мат\t%s", string, (Player[playerid][pSAntiMat]) ? "{FFAA9B}Отключен" : "{ABFF87}Включен");
-	f(string, "%s\nСкрыть ники\t%s", string, (Player[playerid][pSNicks]) ? "{ABFF87}Включен" : "{FFAA9B}Отключен");
-	return SPD(playerid, dSettings, DSTH, "Настройки", string, "Изменить", "Выход");
+	f(string, "РџР°СЂР°РјРµС‚СЂ\tРЎС‚Р°С‚СѓСЃ");
+	f(string, "%s\nР”РµР№СЃС‚РІРёСЏ Р°РґРјРёРЅРёСЃС‚СЂР°С†РёРё\t%s", string, (Player[playerid][pSAdmAction]) ? "{FFAA9B}РћС‚РєР»СЋС‡РµРЅ" : "{ABFF87}Р’РєР»СЋС‡РµРЅ");
+	f(string, "%s\nРџРѕРґСЃРєР°Р·РєРё\t%s", string, (Player[playerid][pSTips]) ? "{FFAA9B}РћС‚РєР»СЋС‡РµРЅ" : "{ABFF87}Р’РєР»СЋС‡РµРЅ");
+	f(string, "%s\nРђРІС‚РѕРёСЃРїСЂР°РІР»РµРЅРёРµ С‚РµРєСЃС‚Р°\t%s", string, (Player[playerid][pSTextCorrection]) ? "{ABFF87}Р’РєР»СЋС‡РµРЅ" : "{FFAA9B}РћС‚РєР»СЋС‡РµРЅ");
+	f(string, "%s\nРђРЅС‚Рё-РјР°С‚\t%s", string, (Player[playerid][pSAntiMat]) ? "{FFAA9B}РћС‚РєР»СЋС‡РµРЅ" : "{ABFF87}Р’РєР»СЋС‡РµРЅ");
+	f(string, "%s\nРЎРєСЂС‹С‚СЊ РЅРёРєРё\t%s", string, (Player[playerid][pSNicks]) ? "{ABFF87}Р’РєР»СЋС‡РµРЅ" : "{FFAA9B}РћС‚РєР»СЋС‡РµРЅ");
+	return SPD(playerid, dSettings, DSTH, "РќР°СЃС‚СЂРѕР№РєРё", string, "РР·РјРµРЅРёС‚СЊ", "Р’С‹С…РѕРґ");
 }
 stock Dialog_Shop(playerid)
 {
 	new string[500], premium = GetPremium(Player[playerid][pID]), text[50];
-	if(!premium) f(text, "{FFAAA0}Нет");
-	else if(1 <= premium <= 59) f(text, "{FFFF00}%02d сек.", premium);
-	else if(60 <= premium <= 3599) f(text, "{FFFF00}%02d мин. %02d сек.", premium / 60, premium % 60);
-	else if(3600 <= premium <= 86399) f(text, "{FFFF00}%02d ч. %02d мин. %02d сек.", premium / 60 / 60, premium / 60 % 60, premium % 60);
-	else f(text, "{FFFF00}%d д. %02d ч. %02d мин. %02d сек.", premium / 60 / 60 / 24, premium / 60 / 60 % 24, premium / 60 % 60, premium % 60);
-	f(string, "{FFF3A5}Донат-счет: {FFFF00}%d", Player[playerid][pDonate]);
-	f(string, "%s\n{FFF3A5}Премиум аккаунт: %s", string, text);
-	f(string, "%s\n{FFF3A5}Цвет ника: %s%s", string, NickColor[Player[playerid][pNickColor]][eColorShort], NickColor[Player[playerid][pNickColor]][eName]);
-	f(string, "%s\n{FFFFFF}Купить премиум аккаунт", string);
-	f(string, "%s\n{FFFFFF}Купить игровую валюту", string);
-	f(string, "%s\n{FFFFFF}Сменить цвет никнейма", string);
-	f(string, "%s\n{FFFFFF}Сменить никнейм", string);
-	return SPD(playerid, dShop, DSL, "Магазин", string, "Далее", "Выход");
+	if(!premium) f(text, "{FFAAA0}РќРµС‚");
+	else if(1 <= premium <= 59) f(text, "{FFFF00}%02d СЃРµРє.", premium);
+	else if(60 <= premium <= 3599) f(text, "{FFFF00}%02d РјРёРЅ. %02d СЃРµРє.", premium / 60, premium % 60);
+	else if(3600 <= premium <= 86399) f(text, "{FFFF00}%02d С‡. %02d РјРёРЅ. %02d СЃРµРє.", premium / 60 / 60, premium / 60 % 60, premium % 60);
+	else f(text, "{FFFF00}%d Рґ. %02d С‡. %02d РјРёРЅ. %02d СЃРµРє.", premium / 60 / 60 / 24, premium / 60 / 60 % 24, premium / 60 % 60, premium % 60);
+	f(string, "{FFF3A5}Р”РѕРЅР°С‚-СЃС‡РµС‚: {FFFF00}%d", Player[playerid][pDonate]);
+	f(string, "%s\n{FFF3A5}РџСЂРµРјРёСѓРј Р°РєРєР°СѓРЅС‚: %s", string, text);
+	f(string, "%s\n{FFF3A5}Р¦РІРµС‚ РЅРёРєР°: %s%s", string, NickColor[Player[playerid][pNickColor]][eColorShort], NickColor[Player[playerid][pNickColor]][eName]);
+	f(string, "%s\n{FFFFFF}РљСѓРїРёС‚СЊ РїСЂРµРјРёСѓРј Р°РєРєР°СѓРЅС‚", string);
+	f(string, "%s\n{FFFFFF}РљСѓРїРёС‚СЊ РёРіСЂРѕРІСѓСЋ РІР°Р»СЋС‚Сѓ", string);
+	f(string, "%s\n{FFFFFF}РЎРјРµРЅРёС‚СЊ С†РІРµС‚ РЅРёРєРЅРµР№РјР°", string);
+	f(string, "%s\n{FFFFFF}РЎРјРµРЅРёС‚СЊ РЅРёРєРЅРµР№Рј", string);
+	return SPD(playerid, dShop, DSL, "РњР°РіР°Р·РёРЅ", string, "Р”Р°Р»РµРµ", "Р’С‹С…РѕРґ");
 }
 stock Dialog_Shop_Money(playerid)
 {
 	new string[300];
-	f(string, "{FFFFFF}Введите за сколько рублей желаете приобрести игровую валюту:");
-	f(string, "%s\n\n{F19E18}Примечание:", string);
-	f(string, "%s\n{F19E18}- Стоимость $500 равна 1 рублю.", string);
-	return SPD(playerid, dShop_Money, DSI, "Покупка игровой валюты", string, "Далее", "Назад");
+	f(string, "{FFFFFF}Р’РІРµРґРёС‚Рµ Р·Р° СЃРєРѕР»СЊРєРѕ СЂСѓР±Р»РµР№ Р¶РµР»Р°РµС‚Рµ РїСЂРёРѕР±СЂРµСЃС‚Рё РёРіСЂРѕРІСѓСЋ РІР°Р»СЋС‚Сѓ:");
+	f(string, "%s\n\n{F19E18}РџСЂРёРјРµС‡Р°РЅРёРµ:", string);
+	f(string, "%s\n{F19E18}- РЎС‚РѕРёРјРѕСЃС‚СЊ $500 СЂР°РІРЅР° 1 СЂСѓР±Р»СЋ.", string);
+	return SPD(playerid, dShop_Money, DSI, "РџРѕРєСѓРїРєР° РёРіСЂРѕРІРѕР№ РІР°Р»СЋС‚С‹", string, "Р”Р°Р»РµРµ", "РќР°Р·Р°Рґ");
 }
 stock Dialog_Shop_ColorNick(playerid)
 {
@@ -2484,101 +2484,101 @@ stock Dialog_Shop_ColorNick(playerid)
 	{
 		if(!is)
 		{
-			if(Player[playerid][pNickColor] == i) f(string, "%s%s\t{FFFF00}Активен", NickColor[i][eColorShort], NickColor[i][eName]);
-			else f(string, "%s%s\t{2BE31A}100 рублей", NickColor[i][eColorShort], NickColor[i][eName]);
+			if(Player[playerid][pNickColor] == i) f(string, "%s%s\t{FFFF00}РђРєС‚РёРІРµРЅ", NickColor[i][eColorShort], NickColor[i][eName]);
+			else f(string, "%s%s\t{2BE31A}100 СЂСѓР±Р»РµР№", NickColor[i][eColorShort], NickColor[i][eName]);
 			is = !is;
 		}
 		else
 		{
-			if(Player[playerid][pNickColor] == i) f(string, "%s\n%s%s\t{FFFF00}Активен", string, NickColor[i][eColorShort], NickColor[i][eName]);
-			else f(string, "%s\n%s%s\t{2BE31A}100 рублей", string, NickColor[i][eColorShort], NickColor[i][eName]);
+			if(Player[playerid][pNickColor] == i) f(string, "%s\n%s%s\t{FFFF00}РђРєС‚РёРІРµРЅ", string, NickColor[i][eColorShort], NickColor[i][eName]);
+			else f(string, "%s\n%s%s\t{2BE31A}100 СЂСѓР±Р»РµР№", string, NickColor[i][eColorShort], NickColor[i][eName]);
 		}
 	}
-	return SPD(playerid, dShop_ColorNick, DST, "Покупка цвета ника", string, "Далее", "Назад");
+	return SPD(playerid, dShop_ColorNick, DST, "РџРѕРєСѓРїРєР° С†РІРµС‚Р° РЅРёРєР°", string, "Р”Р°Р»РµРµ", "РќР°Р·Р°Рґ");
 }
 stock Dialog_Shop_NickName(playerid)
 {
 	new string[300];
-	f(string, "{FFFFFF}Введите никнейм, на который хотите сменить:");
-	f(string, "%s\n\n{F19E18}Примечание:", string);
-	f(string, "%s\n{F19E18}- Стоимость смена ника 100 рублей.", string);
-	f(string, "%s\n{F19E18}- Кол-во симоволов должно быть от 3-х до 20.", string);
-	f(string, "%s\n{F19E18}- Вводите только Латинские буквы и цифры.", string);
-	return SPD(playerid, dShop_NickName, DSI, "Смена никнейма", string, "Сменить", "Назад");
+	f(string, "{FFFFFF}Р’РІРµРґРёС‚Рµ РЅРёРєРЅРµР№Рј, РЅР° РєРѕС‚РѕСЂС‹Р№ С…РѕС‚РёС‚Рµ СЃРјРµРЅРёС‚СЊ:");
+	f(string, "%s\n\n{F19E18}РџСЂРёРјРµС‡Р°РЅРёРµ:", string);
+	f(string, "%s\n{F19E18}- РЎС‚РѕРёРјРѕСЃС‚СЊ СЃРјРµРЅР° РЅРёРєР° 100 СЂСѓР±Р»РµР№.", string);
+	f(string, "%s\n{F19E18}- РљРѕР»-РІРѕ СЃРёРјРѕРІРѕР»РѕРІ РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ РѕС‚ 3-С… РґРѕ 20.", string);
+	f(string, "%s\n{F19E18}- Р’РІРѕРґРёС‚Рµ С‚РѕР»СЊРєРѕ Р›Р°С‚РёРЅСЃРєРёРµ Р±СѓРєРІС‹ Рё С†РёС„СЂС‹.", string);
+	return SPD(playerid, dShop_NickName, DSI, "РЎРјРµРЅР° РЅРёРєРЅРµР№РјР°", string, "РЎРјРµРЅРёС‚СЊ", "РќР°Р·Р°Рґ");
 }
 stock Dialog_RE_Kick(playerid)
 {
 	new string[100];
-	f(string, "Кикнуть обычным режимом");
-	f(string, "%s\nКикнуть скрытным режимом", string);
-	return SPD(playerid, dRE_Kick, DSL, "Кикнуть игрока", string, "Далее", "Выход");
+	f(string, "РљРёРєРЅСѓС‚СЊ РѕР±С‹С‡РЅС‹Рј СЂРµР¶РёРјРѕРј");
+	f(string, "%s\nРљРёРєРЅСѓС‚СЊ СЃРєСЂС‹С‚РЅС‹Рј СЂРµР¶РёРјРѕРј", string);
+	return SPD(playerid, dRE_Kick, DSL, "РљРёРєРЅСѓС‚СЊ РёРіСЂРѕРєР°", string, "Р”Р°Р»РµРµ", "Р’С‹С…РѕРґ");
 }
 stock Dialog_RE_Kick_Kick(playerid)
 {
-	return SPD(playerid, dRE_Kick1, DSI, "Причина кика", "{FFFFFF}Введите причину кика обычного режима:", "Кикнуть", "Назад");
+	return SPD(playerid, dRE_Kick1, DSI, "РџСЂРёС‡РёРЅР° РєРёРєР°", "{FFFFFF}Р’РІРµРґРёС‚Рµ РїСЂРёС‡РёРЅСѓ РєРёРєР° РѕР±С‹С‡РЅРѕРіРѕ СЂРµР¶РёРјР°:", "РљРёРєРЅСѓС‚СЊ", "РќР°Р·Р°Рґ");
 }
 stock Dialog_RE_Kick_SKick(playerid)
 {
-	return SPD(playerid, dRE_Kick1, DSI, "Причина тихого кика", "{FFFFFF}Введите причину кика скрытного режима:", "Кикнуть", "Назад");
+	return SPD(playerid, dRE_Kick1, DSI, "РџСЂРёС‡РёРЅР° С‚РёС…РѕРіРѕ РєРёРєР°", "{FFFFFF}Р’РІРµРґРёС‚Рµ РїСЂРёС‡РёРЅСѓ РєРёРєР° СЃРєСЂС‹С‚РЅРѕРіРѕ СЂРµР¶РёРјР°:", "РљРёРєРЅСѓС‚СЊ", "РќР°Р·Р°Рґ");
 }
 stock Dialog_RE_Mute(playerid)
 {
 	new string[200];
-	f(string, "Выдать мут");
-	f(string, "%s\nСнять мут", string);
-	return SPD(playerid, dRE_Mute, DSL, "Панель мута", string, "Далее", "Выход");
+	f(string, "Р’С‹РґР°С‚СЊ РјСѓС‚");
+	f(string, "%s\nРЎРЅСЏС‚СЊ РјСѓС‚", string);
+	return SPD(playerid, dRE_Mute, DSL, "РџР°РЅРµР»СЊ РјСѓС‚Р°", string, "Р”Р°Р»РµРµ", "Р’С‹С…РѕРґ");
 }
 stock Dialog_RE_Mute_Give(playerid)
 {
 	new string[300];
-	f(string, "{FFFFFF}Введите на сколько минут желаете выдать мут этому игроку:");
-	f(string, "%s\n\n{F19E18}Примечание:", string);
-	f(string, "%s\n{F19E18}- Вводите только цифры.", string);
-	f(string, "%s\n{F19E18}- Вы можете выдать мут от 1 до 180 минут.", string);
-	return SPD(playerid, dRE_Mute_Give, DSI, "Выдача мута | На сколько минут", string, "Далее", "Назад");
+	f(string, "{FFFFFF}Р’РІРµРґРёС‚Рµ РЅР° СЃРєРѕР»СЊРєРѕ РјРёРЅСѓС‚ Р¶РµР»Р°РµС‚Рµ РІС‹РґР°С‚СЊ РјСѓС‚ СЌС‚РѕРјСѓ РёРіСЂРѕРєСѓ:");
+	f(string, "%s\n\n{F19E18}РџСЂРёРјРµС‡Р°РЅРёРµ:", string);
+	f(string, "%s\n{F19E18}- Р’РІРѕРґРёС‚Рµ С‚РѕР»СЊРєРѕ С†РёС„СЂС‹.", string);
+	f(string, "%s\n{F19E18}- Р’С‹ РјРѕР¶РµС‚Рµ РІС‹РґР°С‚СЊ РјСѓС‚ РѕС‚ 1 РґРѕ 180 РјРёРЅСѓС‚.", string);
+	return SPD(playerid, dRE_Mute_Give, DSI, "Р’С‹РґР°С‡Р° РјСѓС‚Р° | РќР° СЃРєРѕР»СЊРєРѕ РјРёРЅСѓС‚", string, "Р”Р°Р»РµРµ", "РќР°Р·Р°Рґ");
 }
 stock Dialog_RE_Mute_Give1(playerid)
 {
-	return SPD(playerid, dRE_Mute_Give1, DSI, "Выдача мута | Причина", "{FFFFFF}Введите причину выдачи мута:", "Выдать", "Назад");
+	return SPD(playerid, dRE_Mute_Give1, DSI, "Р’С‹РґР°С‡Р° РјСѓС‚Р° | РџСЂРёС‡РёРЅР°", "{FFFFFF}Р’РІРµРґРёС‚Рµ РїСЂРёС‡РёРЅСѓ РІС‹РґР°С‡Рё РјСѓС‚Р°:", "Р’С‹РґР°С‚СЊ", "РќР°Р·Р°Рґ");
 }
 stock Dialog_RE_Mute_Clear(playerid)
 {
-	return SPD(playerid, dRE_Mute_Clear, DSI, "Снятие мута | Причина", "{FFFFFF}Введите причину снятие мута:", "Снять", "Назад");
+	return SPD(playerid, dRE_Mute_Clear, DSI, "РЎРЅСЏС‚РёРµ РјСѓС‚Р° | РџСЂРёС‡РёРЅР°", "{FFFFFF}Р’РІРµРґРёС‚Рµ РїСЂРёС‡РёРЅСѓ СЃРЅСЏС‚РёРµ РјСѓС‚Р°:", "РЎРЅСЏС‚СЊ", "РќР°Р·Р°Рґ");
 }
 stock Dialog_RE_Ban(playerid)
 {
 	new string[150];
-	f(string, "Забанить аккаунт обычным режимом");
-	f(string, "%s\nЗабанить аккаунт скрытным режимом", string);
-	return SPD(playerid, dRE_Ban, DSL, "Забанить игрока", string, "Далее", "Выход");
+	f(string, "Р—Р°Р±Р°РЅРёС‚СЊ Р°РєРєР°СѓРЅС‚ РѕР±С‹С‡РЅС‹Рј СЂРµР¶РёРјРѕРј");
+	f(string, "%s\nР—Р°Р±Р°РЅРёС‚СЊ Р°РєРєР°СѓРЅС‚ СЃРєСЂС‹С‚РЅС‹Рј СЂРµР¶РёРјРѕРј", string);
+	return SPD(playerid, dRE_Ban, DSL, "Р—Р°Р±Р°РЅРёС‚СЊ РёРіСЂРѕРєР°", string, "Р”Р°Р»РµРµ", "Р’С‹С…РѕРґ");
 }
 stock Dialog_RE_Ban_Ban(playerid)
 {
 	new string[300];
-	f(string, "{FFFFFF}Введите на сколько дней желаете выдать бан аккаунта этому игроку обычным режимом:");
-	f(string, "%s\n\n{F19E18}Примечание:", string);
-	f(string, "%s\n{F19E18}- Вводите только цифры.", string);
-	f(string, "%s\n{F19E18}- Вы можете выдать бан аккаунта от 1 до 90 дней.", string);
-	return SPD(playerid, dRE_Ban1, DSI, "Выдача бана | На сколько дней", string, "Далее", "Назад");
+	f(string, "{FFFFFF}Р’РІРµРґРёС‚Рµ РЅР° СЃРєРѕР»СЊРєРѕ РґРЅРµР№ Р¶РµР»Р°РµС‚Рµ РІС‹РґР°С‚СЊ Р±Р°РЅ Р°РєРєР°СѓРЅС‚Р° СЌС‚РѕРјСѓ РёРіСЂРѕРєСѓ РѕР±С‹С‡РЅС‹Рј СЂРµР¶РёРјРѕРј:");
+	f(string, "%s\n\n{F19E18}РџСЂРёРјРµС‡Р°РЅРёРµ:", string);
+	f(string, "%s\n{F19E18}- Р’РІРѕРґРёС‚Рµ С‚РѕР»СЊРєРѕ С†РёС„СЂС‹.", string);
+	f(string, "%s\n{F19E18}- Р’С‹ РјРѕР¶РµС‚Рµ РІС‹РґР°С‚СЊ Р±Р°РЅ Р°РєРєР°СѓРЅС‚Р° РѕС‚ 1 РґРѕ 90 РґРЅРµР№.", string);
+	return SPD(playerid, dRE_Ban1, DSI, "Р’С‹РґР°С‡Р° Р±Р°РЅР° | РќР° СЃРєРѕР»СЊРєРѕ РґРЅРµР№", string, "Р”Р°Р»РµРµ", "РќР°Р·Р°Рґ");
 }
 stock Dialog_RE_Ban_SBan(playerid)
 {
 	new string[300];
-	f(string, "{FFFFFF}Введите на сколько дней желаете выдать бан аккаунта этому игроку скрытным режимом:");
-	f(string, "%s\n\n{F19E18}Примечание:", string);
-	f(string, "%s\n{F19E18}- Вводите только цифры.", string);
-	f(string, "%s\n{F19E18}- Вы можете выдать бан аккаунта от 1 до 90 дней.", string);
-	return SPD(playerid, dRE_Ban1, DSI, "Выдача бана | На сколько дней", string, "Далее", "Назад");
+	f(string, "{FFFFFF}Р’РІРµРґРёС‚Рµ РЅР° СЃРєРѕР»СЊРєРѕ РґРЅРµР№ Р¶РµР»Р°РµС‚Рµ РІС‹РґР°С‚СЊ Р±Р°РЅ Р°РєРєР°СѓРЅС‚Р° СЌС‚РѕРјСѓ РёРіСЂРѕРєСѓ СЃРєСЂС‹С‚РЅС‹Рј СЂРµР¶РёРјРѕРј:");
+	f(string, "%s\n\n{F19E18}РџСЂРёРјРµС‡Р°РЅРёРµ:", string);
+	f(string, "%s\n{F19E18}- Р’РІРѕРґРёС‚Рµ С‚РѕР»СЊРєРѕ С†РёС„СЂС‹.", string);
+	f(string, "%s\n{F19E18}- Р’С‹ РјРѕР¶РµС‚Рµ РІС‹РґР°С‚СЊ Р±Р°РЅ Р°РєРєР°СѓРЅС‚Р° РѕС‚ 1 РґРѕ 90 РґРЅРµР№.", string);
+	return SPD(playerid, dRE_Ban1, DSI, "Р’С‹РґР°С‡Р° Р±Р°РЅР° | РќР° СЃРєРѕР»СЊРєРѕ РґРЅРµР№", string, "Р”Р°Р»РµРµ", "РќР°Р·Р°Рґ");
 }
 stock Dialog_RE_Ban_Ban1(playerid)
 {
-	return SPD(playerid, dRE_Ban2, DSI, "Выдача бана | Причина", "{FFFFFF}Введите причину выдачи бана аккаунта обычным режимом:", "Выдать", "Назад");
+	return SPD(playerid, dRE_Ban2, DSI, "Р’С‹РґР°С‡Р° Р±Р°РЅР° | РџСЂРёС‡РёРЅР°", "{FFFFFF}Р’РІРµРґРёС‚Рµ РїСЂРёС‡РёРЅСѓ РІС‹РґР°С‡Рё Р±Р°РЅР° Р°РєРєР°СѓРЅС‚Р° РѕР±С‹С‡РЅС‹Рј СЂРµР¶РёРјРѕРј:", "Р’С‹РґР°С‚СЊ", "РќР°Р·Р°Рґ");
 }
 stock Dialog_RE_Ban_SBan1(playerid)
 {
-	return SPD(playerid, dRE_Ban2, DSI, "Выдача бана | Причина", "{FFFFFF}Введите причину выдачи бана аккаунта скрытным режимом:", "Выдать", "Назад");
+	return SPD(playerid, dRE_Ban2, DSI, "Р’С‹РґР°С‡Р° Р±Р°РЅР° | РџСЂРёС‡РёРЅР°", "{FFFFFF}Р’РІРµРґРёС‚Рµ РїСЂРёС‡РёРЅСѓ РІС‹РґР°С‡Рё Р±Р°РЅР° Р°РєРєР°СѓРЅС‚Р° СЃРєСЂС‹С‚РЅС‹Рј СЂРµР¶РёРјРѕРј:", "Р’С‹РґР°С‚СЊ", "РќР°Р·Р°Рґ");
 }
 stock Dialog_RE_BanIp(playerid)
 {
-	return SPD(playerid, dRE_BanIp, DSM, "Бан по IP", "{FFFFFF}Вы действительно желаете забанить этого игрока по IP?", "Да", "Нет");
+	return SPD(playerid, dRE_BanIp, DSM, "Р‘Р°РЅ РїРѕ IP", "{FFFFFF}Р’С‹ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ Р¶РµР»Р°РµС‚Рµ Р·Р°Р±Р°РЅРёС‚СЊ СЌС‚РѕРіРѕ РёРіСЂРѕРєР° РїРѕ IP?", "Р”Р°", "РќРµС‚");
 }
