@@ -1,6 +1,6 @@
 stock TextDraws()
 {
-	// ŒÒÌÓ‚ÌÓÂ ÏÂÌ˛
+	// –û—Å–Ω–æ–≤–Ω–æ–µ –º–µ–Ω—é
 	TD_Menu[0] = TextDrawCreate(643.199523, 161.286666, "usebox");
 	TextDrawLetterSize(TD_Menu[0], 0.000000, 10.514439);
 	TextDrawTextSize(TD_Menu[0], 493.200012, 0.000000);
@@ -90,7 +90,7 @@ stock TextDraws()
 	TextDrawSetOutline(TD_Menu[6], 0);
 	TextDrawFont(TD_Menu[6], 0);
 
-	TD_Menu[7] = TextDrawCreate(17.999994, 201.777801, FixText("»√–¿“‹"));
+	TD_Menu[7] = TextDrawCreate(17.999994, 201.777801, FixText("–ò–ì–†–ê–¢–¨"));
 	TextDrawLetterSize(TD_Menu[7], 0.449999, 1.600000);
 	TextDrawTextSize(TD_Menu[7], 71.600013, 15.0);
 	TextDrawAlignment(TD_Menu[7], 1);
@@ -115,7 +115,7 @@ stock TextDraws()
 	TextDrawSetOutline(TD_Menu[8], 0);
 	TextDrawFont(TD_Menu[8], 0);
 
-	TD_Menu[9] = TextDrawCreate(5.199997, 223.680053, FixText("»——À≈ƒŒ¬¿Õ»ﬂ"));
+	TD_Menu[9] = TextDrawCreate(5.199997, 223.680053, FixText("–ò–°–°–õ–ï–î–û–í–ê–ù–ò–Ø"));
 	TextDrawLetterSize(TD_Menu[9], 0.332399, 1.545244);
 	TextDrawTextSize(TD_Menu[9], 85.600028, 14.0);
 	TextDrawAlignment(TD_Menu[9], 1);
@@ -140,7 +140,7 @@ stock TextDraws()
 	TextDrawSetOutline(TD_Menu[10], 0);
 	TextDrawFont(TD_Menu[10], 0);
 
-	TD_Menu[11] = TextDrawCreate(15.599996, 244.088912, FixText("Ã¿√¿«»Õ"));
+	TD_Menu[11] = TextDrawCreate(15.599996, 244.088912, FixText("–ú–ê–ì–ê–ó–ò–ù"));
 	TextDrawLetterSize(TD_Menu[11], 0.383199, 1.545244);
 	TextDrawTextSize(TD_Menu[11], 72.400039, 14.0);
 	TextDrawAlignment(TD_Menu[11], 1);
@@ -165,7 +165,7 @@ stock TextDraws()
 	TextDrawSetOutline(TD_Menu[12], 0);
 	TextDrawFont(TD_Menu[12], 0);
 
-	TD_Menu[13] = TextDrawCreate(11.200000, 263.502258, FixText("Õ¿—“–Œ… »"));
+	TD_Menu[13] = TextDrawCreate(11.200000, 263.502258, FixText("–ù–ê–°–¢–†–û–ô–ö–ò"));
 	TextDrawLetterSize(TD_Menu[13], 0.373199, 1.530310);
 	TextDrawTextSize(TD_Menu[13], 78.800018, 14.0);
 	TextDrawAlignment(TD_Menu[13], 1);
@@ -244,7 +244,7 @@ stock TextDraws()
 	TextDrawSetOutline(TD_Menu[18], 0);
 	TextDrawFont(TD_Menu[18], 0);
 
-	// ›Í‡Ì Á‡„ÛÁÍË
+	// –≠–∫—Ä–∞–Ω –∑–∞–≥—Ä—É–∑–∫–∏
 	TD_MenuLoadPlay[0] = TextDrawCreate(641.599975, 1.500000, "usebox");
 	TextDrawLetterSize(TD_MenuLoadPlay[0], 0.000000, 49.405799);
 	TextDrawTextSize(TD_MenuLoadPlay[0], -2.000000, 0.000000);
@@ -267,7 +267,7 @@ stock TextDraws()
 	TextDrawSetOutline(TD_MenuLoadPlay[1], 0);
 	TextDrawFont(TD_MenuLoadPlay[1], 0);
 
-	TD_MenuLoadPlay[2] = TextDrawCreate(282.000000, 96.071105, FixText("«¿√–”« ¿"));
+	TD_MenuLoadPlay[2] = TextDrawCreate(282.000000, 96.071105, FixText("–ó–ê–ì–†–£–ó–ö–ê"));
 	TextDrawLetterSize(TD_MenuLoadPlay[2], 0.449999, 1.600000);
 	TextDrawAlignment(TD_MenuLoadPlay[2], 1);
 	TextDrawColor(TD_MenuLoadPlay[2], -1);
@@ -277,7 +277,7 @@ stock TextDraws()
 	TextDrawFont(TD_MenuLoadPlay[2], 1);
 	TextDrawSetProportional(TD_MenuLoadPlay[2], 1);
 
-	TD_MenuLoadPlay[3] = TextDrawCreate(265.600006, 121.955543, FixText("¬–≈Ãﬂ œ–ŒÿÀŒ:"));
+	TD_MenuLoadPlay[3] = TextDrawCreate(265.600006, 121.955543, FixText("–í–†–ï–ú–Ø –ü–†–û–®–õ–û:"));
 	TextDrawLetterSize(TD_MenuLoadPlay[3], 0.240799, 1.211733);
 	TextDrawAlignment(TD_MenuLoadPlay[3], 1);
 	TextDrawColor(TD_MenuLoadPlay[3], -1);
@@ -298,7 +298,7 @@ stock TextDraws()
 	TextDrawSetOutline(TD_MenuLoadPlay[4], 0);
 	TextDrawFont(TD_MenuLoadPlay[4], 0);
 
-	TD_MenuLoadPlay[5] = TextDrawCreate(257.599945, 152.319992, FixText("Œ’–¿ÕÕ»  —“¿Õ÷»»"));
+	TD_MenuLoadPlay[5] = TextDrawCreate(257.599945, 152.319992, FixText("–û–•–†–ê–ù–ù–ò–ö –°–¢–ê–ù–¶–ò–ò"));
 	TextDrawLetterSize(TD_MenuLoadPlay[5], 0.217999, 1.236621);
 	TextDrawAlignment(TD_MenuLoadPlay[5], 1);
 	TextDrawColor(TD_MenuLoadPlay[5], -1);
@@ -319,7 +319,7 @@ stock TextDraws()
 	TextDrawSetOutline(TD_MenuLoadPlay[6], 0);
 	TextDrawFont(TD_MenuLoadPlay[6], 0);
 
-	TD_MenuLoadPlay[7] = TextDrawCreate(258.400024, 188.160003, FixText("›À≈ “–ŒÃ≈’¿Õ» "));
+	TD_MenuLoadPlay[7] = TextDrawCreate(258.400024, 188.160003, FixText("–≠–õ–ï–ö–¢–†–û–ú–ï–•–ê–ù–ò–ö"));
 	TextDrawLetterSize(TD_MenuLoadPlay[7], 0.209200, 1.241600);
 	TextDrawAlignment(TD_MenuLoadPlay[7], 1);
 	TextDrawColor(TD_MenuLoadPlay[7], -1);
@@ -340,7 +340,7 @@ stock TextDraws()
 	TextDrawSetOutline(TD_MenuLoadPlay[8], 0);
 	TextDrawFont(TD_MenuLoadPlay[8], 0);
 
-	TD_MenuLoadPlay[9] = TextDrawCreate(257.600006, 223.502258, FixText("Ã¿ÿ»Õ»—“ “Œ¬¿–ÕŒ√Œ"));
+	TD_MenuLoadPlay[9] = TextDrawCreate(257.600006, 223.502258, FixText("–ú–ê–®–ò–ù–ò–°–¢ –¢–û–í–ê–†–ù–û–ì–û"));
 	TextDrawLetterSize(TD_MenuLoadPlay[9], 0.203599, 1.246577);
 	TextDrawAlignment(TD_MenuLoadPlay[9], 1);
 	TextDrawColor(TD_MenuLoadPlay[9], -1);
@@ -361,7 +361,7 @@ stock TextDraws()
 	TextDrawSetOutline(TD_MenuLoadPlay[10], 0);
 	TextDrawFont(TD_MenuLoadPlay[10], 0);
 
-	TD_MenuLoadPlay[11] = TextDrawCreate(257.200042, 259.840087, FixText("Ã¿ÿ»Õ»—“ œ¿——¿∆»–— Œ√Œ"));
+	TD_MenuLoadPlay[11] = TextDrawCreate(257.200042, 259.840087, FixText("–ú–ê–®–ò–ù–ò–°–¢ –ü–ê–°–°–ê–ñ–ò–†–°–ö–û–ì–û"));
 	TextDrawLetterSize(TD_MenuLoadPlay[11], 0.178399, 1.151998);
 	TextDrawAlignment(TD_MenuLoadPlay[11], 1);
 	TextDrawColor(TD_MenuLoadPlay[11], -1);
@@ -382,7 +382,7 @@ stock TextDraws()
 	TextDrawSetOutline(TD_MenuLoadPlay[12], 0);
 	TextDrawFont(TD_MenuLoadPlay[12], 0);
 
-	TD_MenuLoadPlay[13] = TextDrawCreate(256.799987, 291.697784, FixText("ƒ»—œ≈“◊≈–"));
+	TD_MenuLoadPlay[13] = TextDrawCreate(256.799987, 291.697784, FixText("–î–ò–°–ü–ï–¢–ß–ï–†"));
 	TextDrawLetterSize(TD_MenuLoadPlay[13], 0.226399, 1.251555);
 	TextDrawAlignment(TD_MenuLoadPlay[13], 1);
 	TextDrawColor(TD_MenuLoadPlay[13], -1);
@@ -414,7 +414,7 @@ stock TextDraws()
 	TextDrawSetOutline(TD_MenuLoadPlay[15], 0);
 	TextDrawFont(TD_MenuLoadPlay[15], 0);
 
-	TD_MenuLoadPlay[16] = TextDrawCreate(295.599914, 328.035491, FixText("Õ¿«¿ƒ"));
+	TD_MenuLoadPlay[16] = TextDrawCreate(295.599914, 328.035491, FixText("–ù–ê–ó–ê–î"));
 	TextDrawLetterSize(TD_MenuLoadPlay[16], 0.449999, 1.600000);
 	TextDrawTextSize(TD_MenuLoadPlay[16], 343.199890, 16.0);
 	TextDrawAlignment(TD_MenuLoadPlay[16], 1);
@@ -428,7 +428,7 @@ stock TextDraws()
 	TextDrawSetProportional(TD_MenuLoadPlay[16], 1);
 	TextDrawSetSelectable(TD_MenuLoadPlay[16], true);
 
-	// ÀÓ„ÓÚËÔ
+	// –õ–æ–≥–æ—Ç–∏–ø
 	TD_Logo[0] = TextDrawCreate(551.999877, 3.484437, "P");
 	TextDrawLetterSize(TD_Logo[0], 0.598800, 3.033600);
 	TextDrawAlignment(TD_Logo[0], 1);
@@ -523,7 +523,7 @@ stock TextDraws()
 	TextDrawSetPreviewModel(TD_Logo[6], 5064);
 	TextDrawSetPreviewRot(TD_Logo[6], 90.000000, 0.000000, 0.000000, 1.000000);
 
-	// œÓ˜ËÌÍ‡ ÒÂÏ‡ÙÓ‡
+	// –ü–æ—á–∏–Ω–∫–∞ —Å–µ–º–∞—Ñ–æ—Ä–∞
 	TD_Electrician[0] = TextDrawCreate(602.000000, 145.000000, "FON");
 	TextDrawLetterSize(TD_Electrician[0], 0.000000, 26.633951);
 	TextDrawTextSize(TD_Electrician[0], 145.999893, 0.000000);
@@ -725,7 +725,7 @@ stock TextDraws()
 	TextDrawSetPreviewModel(TD_Electrician[17], 0);
 	TextDrawSetPreviewRot(TD_Electrician[17], 0.000000, 0.000000, 0.000000, 0.000000);
 
-	TD_Electrician[18] = TextDrawCreate(286.000061, 143.359954, FixText("CXEMA —≈Ã¿‘Œ–¿"));
+	TD_Electrician[18] = TextDrawCreate(286.000061, 143.359954, FixText("CXEMA –°–ï–ú–ê–§–û–†–ê"));
 	TextDrawLetterSize(TD_Electrician[18], 0.449999, 1.600000);
 	TextDrawAlignment(TD_Electrician[18], 1);
 	TextDrawColor(TD_Electrician[18], -1);
@@ -735,7 +735,7 @@ stock TextDraws()
 	TextDrawFont(TD_Electrician[18], 2);
 	TextDrawSetProportional(TD_Electrician[18], 1);
 
-	TD_Electrician[19] = TextDrawCreate(385.000061, 162.275573, FixText("—»À¿ “Œ ¿"));
+	TD_Electrician[19] = TextDrawCreate(385.000061, 162.275573, FixText("–°–ò–õ–ê –¢–û–ö–ê"));
 	TextDrawLetterSize(TD_Electrician[19], 0.449999, 1.600000);
 	TextDrawAlignment(TD_Electrician[19], 2);
 	TextDrawColor(TD_Electrician[19], -1);
@@ -755,7 +755,7 @@ stock TextDraws()
 	TextDrawFont(TD_Electrician[20], 2);
 	TextDrawSetProportional(TD_Electrician[20], 1);
 
-	TD_Electrician[21] = TextDrawCreate(366.999938, 239.928909, FixText("Õ¿œ–ﬂ∆≈Õ»≈"));
+	TD_Electrician[21] = TextDrawCreate(366.999938, 239.928909, FixText("–ù–ê–ü–†–Ø–ñ–ï–ù–ò–ï"));
 	TextDrawLetterSize(TD_Electrician[21], 0.449999, 1.600000);
 	TextDrawAlignment(TD_Electrician[21], 2);
 	TextDrawColor(TD_Electrician[21], -1);
@@ -765,7 +765,7 @@ stock TextDraws()
 	TextDrawFont(TD_Electrician[21], 2);
 	TextDrawSetProportional(TD_Electrician[21], 1);
 
-	TD_Electrician[22] = TextDrawCreate(371.799926, 316.088775, FixText("—Œœ–Œ“»¬À≈Õ»≈"));
+	TD_Electrician[22] = TextDrawCreate(371.799926, 316.088775, FixText("–°–û–ü–†–û–¢–ò–í–õ–ï–ù–ò–ï"));
 	TextDrawLetterSize(TD_Electrician[22], 0.449999, 1.600000);
 	TextDrawAlignment(TD_Electrician[22], 2);
 	TextDrawColor(TD_Electrician[22], -1);
@@ -904,7 +904,7 @@ stock TextDraws()
 	TextDrawSetOutline(TD_Electrician[34], 0);
 	TextDrawFont(TD_Electrician[34], 1);
 
-	TD_Electrician[35] = TextDrawCreate(175.000000, 323.000000, FixText("¬ À"));
+	TD_Electrician[35] = TextDrawCreate(175.000000, 323.000000, FixText("–í–ö–õ"));
 	TextDrawLetterSize(TD_Electrician[35], 0.449999, 1.600000);
 	TextDrawTextSize(TD_Electrician[35], 207.999938, 15.0);
 	TextDrawAlignment(TD_Electrician[35], 1);
@@ -918,7 +918,7 @@ stock TextDraws()
 	TextDrawSetProportional(TD_Electrician[35], 1);
 	TextDrawSetSelectable(TD_Electrician[35], true);
 
-	TD_Electrician[36] = TextDrawCreate(175.000000, 349.000000, FixText("¬€ À"));
+	TD_Electrician[36] = TextDrawCreate(175.000000, 349.000000, FixText("–í–´–ö–õ"));
 	TextDrawLetterSize(TD_Electrician[36], 0.449999, 1.600000);
 	TextDrawTextSize(TD_Electrician[36], 215.200042, 15.0);
 	TextDrawAlignment(TD_Electrician[36], 1);
@@ -943,7 +943,7 @@ stock TextDraws()
 	TextDrawSetOutline(TD_Electrician[37], 0);
 	TextDrawFont(TD_Electrician[37], 0);
 
-	// œ‡ÌÂÎ¸ ÒÎÂ‰ˇ˘Â„Ó Á‡ Ï‡¯ËÌËÒÚ‡
+	// –ü–∞–Ω–µ–ª—å —Å–ª–µ–¥—è—â–µ–≥–æ –∑–∞ –º–∞—à–∏–Ω–∏—Å—Ç–∞
 	ReDispatcher[0] = TextDrawCreate(629.200073, 321.073242, "usebox");
 	TextDrawLetterSize(ReDispatcher[0], 0.000000, 12.625555);
 	TextDrawTextSize(ReDispatcher[0], 433.600006, 0.000000);
@@ -966,7 +966,7 @@ stock TextDraws()
 	TextDrawSetOutline(ReDispatcher[1], 0);
 	TextDrawFont(ReDispatcher[1], 0);
 
-	ReDispatcher[2] = TextDrawCreate(454.400115, 318.826538, FixText("œ¿Õ≈À‹ ƒ»—œ≈“◊≈–¿"));
+	ReDispatcher[2] = TextDrawCreate(454.400115, 318.826538, FixText("–ü–ê–ù–ï–õ–¨ –î–ò–°–ü–ï–¢–ß–ï–†–ê"));
 	TextDrawLetterSize(ReDispatcher[2], 0.351999, 1.682000);
 	TextDrawAlignment(ReDispatcher[2], 1);
 	TextDrawColor(ReDispatcher[2], -1);
@@ -976,7 +976,7 @@ stock TextDraws()
 	TextDrawFont(ReDispatcher[2], 2);
 	TextDrawSetProportional(ReDispatcher[2], 1);
 
-	ReDispatcher[3] = TextDrawCreate(441.000000, 339.000000, FixText("»Ãﬂ:"));
+	ReDispatcher[3] = TextDrawCreate(441.000000, 339.000000, FixText("–ò–ú–Ø:"));
 	TextDrawLetterSize(ReDispatcher[3], 0.409000, 1.649999);
 	TextDrawAlignment(ReDispatcher[3], 1);
 	TextDrawColor(ReDispatcher[3], -1);
@@ -988,7 +988,7 @@ stock TextDraws()
 	TextDrawFont(ReDispatcher[3], 1);
 	TextDrawSetProportional(ReDispatcher[3], 1);
 
-	ReDispatcher[4] = TextDrawCreate(441.000000, 360.000000, FixText("COC“AB:"));
+	ReDispatcher[4] = TextDrawCreate(441.000000, 360.000000, FixText("COC–¢AB:"));
 	TextDrawLetterSize(ReDispatcher[4], 0.409000, 1.649999);
 	TextDrawAlignment(ReDispatcher[4], 1);
 	TextDrawColor(ReDispatcher[4], -1);
@@ -1020,7 +1020,7 @@ stock TextDraws()
 	TextDrawSetOutline(ReDispatcher[6], 0);
 	TextDrawFont(ReDispatcher[6], 0);
 
-	ReDispatcher[7] = TextDrawCreate(441.000000, 380.000000, FixText("CKOPOC“‹:"));
+	ReDispatcher[7] = TextDrawCreate(441.000000, 380.000000, FixText("CKOPOC–¢–¨:"));
 	TextDrawLetterSize(ReDispatcher[7], 0.409000, 1.649999);
 	TextDrawAlignment(ReDispatcher[7], 1);
 	TextDrawColor(ReDispatcher[7], -1);
@@ -1041,7 +1041,7 @@ stock TextDraws()
 	TextDrawSetOutline(ReDispatcher[8], 0);
 	TextDrawFont(ReDispatcher[8], 0);
 
-	ReDispatcher[9] = TextDrawCreate(441.000000, 400.000000, FixText("MEC“ŒœŒÀŒ∆≈Õ»≈:"));
+	ReDispatcher[9] = TextDrawCreate(441.000000, 400.000000, FixText("MEC–¢–û–ü–û–õ–û–ñ–ï–ù–ò–ï:"));
 	TextDrawLetterSize(ReDispatcher[9], 0.409000, 1.649999);
 	TextDrawAlignment(ReDispatcher[9], 1);
 	TextDrawColor(ReDispatcher[9], -1);
@@ -1095,7 +1095,7 @@ stock TextDraws()
 	TextDrawSetOutline(ReDispatcher[13], 0);
 	TextDrawFont(ReDispatcher[13], 0);
 
-	ReDispatcher[14] = TextDrawCreate(45.000000, 178.000000, FixText("MEHﬁ"));
+	ReDispatcher[14] = TextDrawCreate(45.000000, 178.000000, FixText("MEH–Æ"));
 	TextDrawLetterSize(ReDispatcher[14], 0.409000, 1.649000);
 	TextDrawAlignment(ReDispatcher[14], 1);
 	TextDrawColor(ReDispatcher[14], -1);
@@ -1105,7 +1105,7 @@ stock TextDraws()
 	TextDrawFont(ReDispatcher[14], 2);
 	TextDrawSetProportional(ReDispatcher[14], 1);
 
-	ReDispatcher[15] = TextDrawCreate(26.000000, 205.000000, FixText("CÀ≈ƒ”ﬁŸ»…"));
+	ReDispatcher[15] = TextDrawCreate(26.000000, 205.000000, FixText("C–õ–ï–î–£–Æ–©–ò–ô"));
 	TextDrawLetterSize(ReDispatcher[15], 0.388000, 1.506999);
 	TextDrawTextSize(ReDispatcher[15], 112.400009, 13.0);
 	TextDrawAlignment(ReDispatcher[15], 1);
@@ -1130,7 +1130,7 @@ stock TextDraws()
 	TextDrawSetOutline(ReDispatcher[16], 0);
 	TextDrawFont(ReDispatcher[16], 0);
 
-	ReDispatcher[17] = TextDrawCreate(24.000000, 232.000000, FixText("œ–≈ƒ€ƒ”Ÿ»…"));
+	ReDispatcher[17] = TextDrawCreate(24.000000, 232.000000, FixText("–ü–†–ï–î–´–î–£–©–ò–ô"));
 	TextDrawLetterSize(ReDispatcher[17], 0.388000, 1.506999);
 	TextDrawTextSize(ReDispatcher[17], 113.600006, 13.0);
 	TextDrawAlignment(ReDispatcher[17], 1);
@@ -1155,7 +1155,7 @@ stock TextDraws()
 	TextDrawSetOutline(ReDispatcher[18], 0);
 	TextDrawFont(ReDispatcher[18], 0);
 
-	ReDispatcher[19] = TextDrawCreate(43.200016, 271.040008, FixText("B€XOƒ"));
+	ReDispatcher[19] = TextDrawCreate(43.200016, 271.040008, FixText("B–´XO–î"));
 	TextDrawLetterSize(ReDispatcher[19], 0.388000, 1.506999);
 	TextDrawTextSize(ReDispatcher[19], 91.999938, 13.0);
 	TextDrawAlignment(ReDispatcher[19], 1);
@@ -1180,7 +1180,7 @@ stock TextDraws()
 	TextDrawSetOutline(ReDispatcher[20], 0);
 	TextDrawFont(ReDispatcher[20], 0);
 
-	// —ÔË‰ÓÏÂÚ
+	// –°–ø–∏–¥–æ–º–µ—Ç—Ä
 	TDSpeedometer[0] = TextDrawCreate(440.000000, 400.000000, "LD_POOL:ball");
 	TextDrawLetterSize(TDSpeedometer[0], 0.000000, 0.000000);
 	TextDrawTextSize(TDSpeedometer[0], 22.000005, 24.888885);
@@ -1279,7 +1279,7 @@ stock TextDraws()
 	TextDrawSetOutline(TDSpeedometer[8], 0);
 	TextDrawFont(TDSpeedometer[8], 0);
 
-	TDSpeedometer[9] = TextDrawCreate(494.399902, 305.000000, FixText("CKOPOC“‹, KM/◊"));
+	TDSpeedometer[9] = TextDrawCreate(494.399902, 305.000000, FixText("CKOPOC–¢–¨, KM/–ß"));
 	TextDrawLetterSize(TDSpeedometer[9], 0.263000, 1.019999);
 	TextDrawAlignment(TDSpeedometer[9], 1);
 	TextDrawColor(TDSpeedometer[9], -1);
@@ -1300,7 +1300,7 @@ stock TextDraws()
 	TextDrawSetOutline(TDSpeedometer[10], 0);
 	TextDrawFont(TDSpeedometer[10], 0);
 
-	TDSpeedometer[11] = TextDrawCreate(474.799835, 342.004455, FixText("PACC“OﬂH»E ƒO œOE«ƒA, M"));
+	TDSpeedometer[11] = TextDrawCreate(474.799835, 342.004455, FixText("PACC–¢O–ØH–òE –îO –üOE–ó–îA, M"));
 	TextDrawLetterSize(TDSpeedometer[11], 0.263000, 1.019999);
 	TextDrawAlignment(TDSpeedometer[11], 1);
 	TextDrawColor(TDSpeedometer[11], -1);
@@ -1354,7 +1354,7 @@ stock TextDraws()
 	TextDrawSetOutline(TDSpeedometer[15], 0);
 	TextDrawFont(TDSpeedometer[15], 0);
 
-	TDSpeedometer[16] = TextDrawCreate(473.000000, 378.000000, FixText("PACC“OﬂH»E ƒO C“AH÷»», M"));
+	TDSpeedometer[16] = TextDrawCreate(473.000000, 378.000000, FixText("PACC–¢O–ØH–òE –îO C–¢AH–¶–ò–ò, M"));
 	TextDrawLetterSize(TDSpeedometer[16], 0.263000, 1.019999);
 	TextDrawAlignment(TDSpeedometer[16], 1);
 	TextDrawColor(TDSpeedometer[16], -1);
@@ -1364,7 +1364,7 @@ stock TextDraws()
 	TextDrawFont(TDSpeedometer[16], 1);
 	TextDrawSetProportional(TDSpeedometer[16], 1);
 
-	// √ÛÁ
+	// –ì—Ä—É–∑
 	TDCargo[0] = TextDrawCreate(626.000000, 142.000000, "usebox");
 	TextDrawLetterSize(TDCargo[0], 0.000000, 10.889263);
 	TextDrawTextSize(TDCargo[0], 493.599792, 0.000000);
@@ -1401,7 +1401,7 @@ stock TextDraws()
 	TextDrawSetOutline(TDCargo[2], 0);
 	TextDrawFont(TDCargo[2], 0);
 
-	TDCargo[3] = TextDrawCreate(560.200500, 141.995590, FixText("»H‘OPMA÷»ﬂ O √P”«E"));
+	TDCargo[3] = TextDrawCreate(560.200500, 141.995590, FixText("–òH–§OPMA–¶–ò–Ø O –ìP–£–óE"));
 	TextDrawLetterSize(TDCargo[3], 0.211199, 0.987733);
 	TextDrawAlignment(TDCargo[3], 2);
 	TextDrawColor(TDCargo[3], -1);
@@ -1473,7 +1473,7 @@ stock TextDraws()
 	TextDrawFont(TDCargo[9], 1);
 	TextDrawSetProportional(TDCargo[9], 1);
 
-	TDCargo[10] = TextDrawCreate(538.600097, 220.000000, FixText("œ–»¡€À‹:"));
+	TDCargo[10] = TextDrawCreate(538.600097, 220.000000, FixText("–ü–†–ò–ë–´–õ–¨:"));
 	TextDrawLetterSize(TDCargo[10], 0.209995, 0.980000);
 	TextDrawAlignment(TDCargo[10], 2);
 	TextDrawColor(TDCargo[10], -1);
@@ -1483,7 +1483,7 @@ stock TextDraws()
 	TextDrawFont(TDCargo[10], 2);
 	TextDrawSetProportional(TDCargo[10], 1);
 
-	// ƒ‚ÂË
+	// –î–≤–µ—Ä–∏
 	TDDoor[0] = TextDrawCreate(614.399780, 154.317932, "usebox");
 	TextDrawLetterSize(TDDoor[0], 0.000000, 8.821105);
 	TextDrawTextSize(TDDoor[0], 532.399780, 0.000000);
@@ -1506,7 +1506,7 @@ stock TextDraws()
 	TextDrawSetOutline(TDDoor[1], 0);
 	TextDrawFont(TDDoor[1], 0);
 
-	TDDoor[2] = TextDrawCreate(573.000000, 155.000000, FixText("ƒ¬≈–»"));
+	TDDoor[2] = TextDrawCreate(573.000000, 155.000000, FixText("–î–í–ï–†–ò"));
 	TextDrawLetterSize(TDDoor[2], 0.263000, 1.009999);
 	TextDrawAlignment(TDDoor[2], 2);
 	TextDrawColor(TDDoor[2], -1);
@@ -1541,7 +1541,7 @@ stock TextDraws()
 	TextDrawFont(TDDoor[4], 4);
 	TextDrawSetSelectable(TDDoor[4], true);
 
-	TDDoor[5] = TextDrawCreate(564.600280, 184.479965, FixText("O“KP€“‹"));
+	TDDoor[5] = TextDrawCreate(564.600280, 184.479965, FixText("O–¢KP–´–¢–¨"));
 	TextDrawLetterSize(TDDoor[5], 0.201599, 1.092265);
 	TextDrawAlignment(TDDoor[5], 2);
 	TextDrawColor(TDDoor[5], -1);
@@ -1574,7 +1574,7 @@ stock TextDraws()
 	TextDrawFont(TDDoor[7], 4);
 	TextDrawSetSelectable(TDDoor[7], true);
 
-	TDDoor[8] = TextDrawCreate(564.600036, 210.493362, FixText("«¿ –€“‹"));
+	TDDoor[8] = TextDrawCreate(564.600036, 210.493362, FixText("–ó–ê–ö–†–´–¢–¨"));
 	TextDrawLetterSize(TDDoor[8], 0.201599, 1.092265);
 	TextDrawAlignment(TDDoor[8], 2);
 	TextDrawColor(TDDoor[8], -1);
@@ -1584,7 +1584,7 @@ stock TextDraws()
 	TextDrawFont(TDDoor[8], 2);
 	TextDrawSetProportional(TDDoor[8], 1);
 
-	// –ÂÍÓÌ
+	// –†–µ–∫–æ–Ω
 	TD_Recon[0] = TextDrawCreate(625.199707, 148.842224, "usebox");
 	TextDrawLetterSize(TD_Recon[0], 0.000000, 25.373226);
 	TextDrawTextSize(TD_Recon[0], 514.799621, 0.000000);
@@ -1852,7 +1852,7 @@ stock PlayerTextDraws(playerid)
 	PlayerTextDrawSetOutline(playerid, TDP_Menu[playerid][3], 0);
 	PlayerTextDrawFont(playerid, TDP_Menu[playerid][3], 0);
 
-	TDP_Menu[playerid][4] = CreatePlayerTextDraw(playerid, 318.400024, 345.955596, FixText("Ã¿ÿ»Õ»—“ œ¿——¿∆»–— Œ√Œ"));
+	TDP_Menu[playerid][4] = CreatePlayerTextDraw(playerid, 318.400024, 345.955596, FixText("–ú–ê–®–ò–ù–ò–°–¢ –ü–ê–°–°–ê–ñ–ò–†–°–ö–û–ì–û"));
 	PlayerTextDrawLetterSize(playerid, TDP_Menu[playerid][4], 0.324799, 1.560177);
 	PlayerTextDrawAlignment(playerid, TDP_Menu[playerid][4], 2);
 	PlayerTextDrawColor(playerid, TDP_Menu[playerid][4], -1);
@@ -1862,7 +1862,7 @@ stock PlayerTextDraws(playerid)
 	PlayerTextDrawFont(playerid, TDP_Menu[playerid][4], 1);
 	PlayerTextDrawSetProportional(playerid, TDP_Menu[playerid][4], 1);
 
-	TDP_Menu[playerid][5] = CreatePlayerTextDraw(playerid, 318.800048, 372.337829, FixText("ƒŒ—“”œÕŒ — 7-√Œ ”–Œ¬Õﬂ"));
+	TDP_Menu[playerid][5] = CreatePlayerTextDraw(playerid, 318.800048, 372.337829, FixText("–î–û–°–¢–£–ü–ù–û –° 7-–ì–û –£–†–û–í–ù–Ø"));
 	PlayerTextDrawLetterSize(playerid, TDP_Menu[playerid][5], 0.330399, 1.614933);
 	PlayerTextDrawAlignment(playerid, TDP_Menu[playerid][5], 2);
 	PlayerTextDrawColor(playerid, TDP_Menu[playerid][5], -16776961);
@@ -1872,7 +1872,7 @@ stock PlayerTextDraws(playerid)
 	PlayerTextDrawFont(playerid, TDP_Menu[playerid][5], 1);
 	PlayerTextDrawSetProportional(playerid, TDP_Menu[playerid][5], 1);
 
-	// ›Í‡Ì Á‡„ÛÁÍË
+	// –≠–∫—Ä–∞–Ω –∑–∞–≥—Ä—É–∑–∫–∏
 	TDP_MenuLoadPlay[playerid][0] = CreatePlayerTextDraw(playerid, 338.400115, 120.960021, "1:00:50");
 	PlayerTextDrawLetterSize(playerid, TDP_MenuLoadPlay[playerid][0], 0.302399, 1.361066);
 	PlayerTextDrawAlignment(playerid, TDP_MenuLoadPlay[playerid][0], 1);
@@ -1933,7 +1933,7 @@ stock PlayerTextDraws(playerid)
 	PlayerTextDrawFont(playerid, TDP_MenuLoadPlay[playerid][5], 1);
 	PlayerTextDrawSetProportional(playerid, TDP_MenuLoadPlay[playerid][5], 1);
 
-	// œÓ˜ËÌÍ‡ ÒÂÏ‡ÙÓ‡
+	// –ü–æ—á–∏–Ω–∫–∞ —Å–µ–º–∞—Ñ–æ—Ä–∞
 	TDP_Electrician[playerid][0] = CreatePlayerTextDraw(playerid, 195.999847, 262.826782, "45");
 	PlayerTextDrawLetterSize(playerid, TDP_Electrician[playerid][0], 0.449999, 1.600000);
 	PlayerTextDrawAlignment(playerid, TDP_Electrician[playerid][0], 2);
@@ -2147,7 +2147,7 @@ stock PlayerTextDraws(playerid)
 	PlayerTextDrawSetProportional(playerid, TDP_Electrician[playerid][18], 1);
 	PlayerTextDrawSetSelectable(playerid, TDP_Electrician[playerid][18], true);
 
-	// œ‡ÌÂÎ¸ ÒÎÂ‰ˇ˘Â„Ó Á‡ Ï‡¯ËÌËÒÚ‡ÏË
+	// –ü–∞–Ω–µ–ª—å —Å–ª–µ–¥—è—â–µ–≥–æ –∑–∞ –º–∞—à–∏–Ω–∏—Å—Ç–∞–º–∏
 	PReDispatcher[playerid][0] = CreatePlayerTextDraw(playerid, 480.000000, 339.000000, "Name");
 	PlayerTextDrawLetterSize(playerid, PReDispatcher[playerid][0], 0.409000, 1.649000);
 	PlayerTextDrawAlignment(playerid, PReDispatcher[playerid][0], 1);
@@ -2158,7 +2158,7 @@ stock PlayerTextDraws(playerid)
 	PlayerTextDrawFont(playerid, PReDispatcher[playerid][0], 1);
 	PlayerTextDrawSetProportional(playerid, PReDispatcher[playerid][0], 1);
 
-	PReDispatcher[playerid][1] = CreatePlayerTextDraw(playerid, 504.000000, 360.000000, FixText("œ¿——¿∆»–— »…"));
+	PReDispatcher[playerid][1] = CreatePlayerTextDraw(playerid, 504.000000, 360.000000, FixText("–ü–ê–°–°–ê–ñ–ò–†–°–ö–ò–ô"));
 	PlayerTextDrawLetterSize(playerid, PReDispatcher[playerid][1], 0.409000, 1.649999);
 	PlayerTextDrawAlignment(playerid, PReDispatcher[playerid][1], 1);
 	PlayerTextDrawColor(playerid, PReDispatcher[playerid][1], -1);
@@ -2168,7 +2168,7 @@ stock PlayerTextDraws(playerid)
 	PlayerTextDrawFont(playerid, PReDispatcher[playerid][1], 1);
 	PlayerTextDrawSetProportional(playerid, PReDispatcher[playerid][1], 1);
 
-	PReDispatcher[playerid][2] = CreatePlayerTextDraw(playerid, 519.000000, 380.000000, FixText("10000 KM/◊"));
+	PReDispatcher[playerid][2] = CreatePlayerTextDraw(playerid, 519.000000, 380.000000, FixText("10000 KM/–ß"));
 	PlayerTextDrawLetterSize(playerid, PReDispatcher[playerid][2], 0.409000, 1.649999);
 	PlayerTextDrawAlignment(playerid, PReDispatcher[playerid][2], 1);
 	PlayerTextDrawColor(playerid, PReDispatcher[playerid][2], -1);
@@ -2178,7 +2178,7 @@ stock PlayerTextDraws(playerid)
 	PlayerTextDrawFont(playerid, PReDispatcher[playerid][2], 1);
 	PlayerTextDrawSetProportional(playerid, PReDispatcher[playerid][2], 1);
 
-	PReDispatcher[playerid][3] = CreatePlayerTextDraw(playerid, 441.000000, 419.000000, FixText("≈‰ÂÚ ‚ ∆ƒÀ—"));
+	PReDispatcher[playerid][3] = CreatePlayerTextDraw(playerid, 441.000000, 419.000000, FixText("–ï–¥–µ—Ç –≤ –ñ–î–õ–°"));
 	PlayerTextDrawLetterSize(playerid, PReDispatcher[playerid][3], 0.372999, 1.657466);
 	PlayerTextDrawAlignment(playerid, PReDispatcher[playerid][3], 1);
 	PlayerTextDrawColor(playerid, PReDispatcher[playerid][3], -1);
@@ -2188,8 +2188,8 @@ stock PlayerTextDraws(playerid)
 	PlayerTextDrawFont(playerid, PReDispatcher[playerid][3], 1);
 	PlayerTextDrawSetProportional(playerid, PReDispatcher[playerid][3], 1);
 
-	// —ÔË‰ÓÏÂÚ
-	PTDSpeedometer[playerid][0] = CreatePlayerTextDraw(playerid, 528.0, 290.502227, FixText("œACCA∆»PCK»… œOE«ƒ"));
+	// –°–ø–∏–¥–æ–º–µ—Ç—Ä
+	PTDSpeedometer[playerid][0] = CreatePlayerTextDraw(playerid, 528.0, 290.502227, FixText("–üACCA–ñ–òPCK–ò–ô –üOE–ó–î"));
 	PlayerTextDrawLetterSize(playerid, PTDSpeedometer[playerid][0], 0.263998, 1.021999);
 	PlayerTextDrawAlignment(playerid, PTDSpeedometer[playerid][0], 2);
 	PlayerTextDrawColor(playerid, PTDSpeedometer[playerid][0], -1);
@@ -2241,7 +2241,7 @@ stock PlayerTextDraws(playerid)
 	PlayerTextDrawFont(playerid, PTDSpeedometer[playerid][4], 1);
 	PlayerTextDrawSetProportional(playerid, PTDSpeedometer[playerid][4], 1);
 
-	// √ÛÁ
+	// –ì—Ä—É–∑
 	PTDCargo[playerid][0] = CreatePlayerTextDraw(playerid, 594.600463, 163.004501, "0/50000");
 	PlayerTextDrawLetterSize(playerid, PTDCargo[playerid][0], 0.315600, 1.510398);
 	PlayerTextDrawAlignment(playerid, PTDCargo[playerid][0], 3);
@@ -2254,7 +2254,7 @@ stock PlayerTextDraws(playerid)
 	PlayerTextDrawFont(playerid, PTDCargo[playerid][0], 3);
 	PlayerTextDrawSetProportional(playerid, PTDCargo[playerid][0], 1);
 
-	PTDCargo[playerid][1] = CreatePlayerTextDraw(playerid, 544.000000, 202.000000, FixText("«¿√–”« ¿ B"));
+	PTDCargo[playerid][1] = CreatePlayerTextDraw(playerid, 544.000000, 202.000000, FixText("–ó–ê–ì–†–£–ó–ö–ê B"));
 	PlayerTextDrawLetterSize(playerid, PTDCargo[playerid][1], 0.209995, 0.980000);
 	PlayerTextDrawAlignment(playerid, PTDCargo[playerid][1], 2);
 	PlayerTextDrawColor(playerid, PTDCargo[playerid][1], -1);
@@ -2264,7 +2264,7 @@ stock PlayerTextDraws(playerid)
 	PlayerTextDrawFont(playerid, PTDCargo[playerid][1], 2);
 	PlayerTextDrawSetProportional(playerid, PTDCargo[playerid][1], 1);
 
-	PTDCargo[playerid][2] = CreatePlayerTextDraw(playerid, 588.000000, 202.000000, FixText("∆ƒÀ—"));
+	PTDCargo[playerid][2] = CreatePlayerTextDraw(playerid, 588.000000, 202.000000, FixText("–ñ–î–õ–°"));
 	PlayerTextDrawLetterSize(playerid, PTDCargo[playerid][2], 0.209995, 0.980000);
 	PlayerTextDrawAlignment(playerid, PTDCargo[playerid][2], 2);
 	PlayerTextDrawColor(playerid, PTDCargo[playerid][2], -1);
@@ -2288,7 +2288,7 @@ stock PlayerTextDraws(playerid)
 	PlayerTextDrawFont(playerid, PTDCargo[playerid][3], 1);
 	PlayerTextDrawSetProportional(playerid, PTDCargo[playerid][3], 1);
 
-	// –ÂÍÓÌ
+	// –†–µ–∫–æ–Ω
 	PTD_Recon[playerid][0] = CreatePlayerTextDraw(playerid, 570.998901, 168.253524, "Ilya DovgiyMarat");
 	PlayerTextDrawLetterSize(playerid, PTD_Recon[playerid][0], 0.217197, 1.286398);
 	PlayerTextDrawAlignment(playerid, PTD_Recon[playerid][0], 2);

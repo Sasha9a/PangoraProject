@@ -1,12 +1,12 @@
 stock ObjectsMap()
 {
-	// Банкоматы на станциях
+	// Р‘Р°РЅРєРѕРјР°С‚С‹ РЅР° СЃС‚Р°РЅС†РёСЏС…
 	CreateDynamicObject(962, 1439.23120, 2623.30688, 11.44580,   90.00000, 0.00000, 180.00000);
 	CreateDynamicObject(962, -1960.47131, 141.67970, 27.73440,   90.00000, 0.00000, 90.00000);
 	CreateDynamicObject(962, 823.41663, -1353.33557, -0.45570,   90.00000, 0.00000, -42.00000);
 
 	new tmpobjid;
-	// Семафор 1
+	// РЎРµРјР°С„РѕСЂ 1
 	tmpobjid = CreateDynamicObject(1214, 1796.530761, -1951.547119, 12.541199, 0.000000, 0.000000, 0.000000); 
 	SetDynamicObjectMaterial(tmpobjid, 1, 18646, "matcolours", "grey", 0x00000000);
 	tmpobjid = CreateDynamicObject(1214, 1796.530761, -1951.547119, 13.747200, 0.000000, 0.000000, 0.000000); 
@@ -36,7 +36,7 @@ stock ObjectsMap()
 	SetDynamicObjectMaterial(tmpobjid, 1, 16644, "a51_detailstuff", "roucghstonebrtb", 0x00000000);
 	SetDynamicObjectMaterialText(tmpobjid, 1, "1", 100, "Arial", 199, 0, 0xFF000000, 0xFFFFFFFF, 1);
 
-	// Семафор 2
+	// РЎРµРјР°С„РѕСЂ 2
 	tmpobjid = CreateDynamicObject(1214, 2041.78333, -1951.47266, 12.54150,   0.00000, 0.00000, 0.00000);
 	SetDynamicObjectMaterial(tmpobjid, 1, 18646, "matcolours", "grey", 0x00000000);
 	tmpobjid = CreateDynamicObject(1214, 2041.78333, -1951.47266, 13.74750,   0.00000, 0.00000, 0.00000);
@@ -66,7 +66,7 @@ stock ObjectsMap()
 	SetDynamicObjectMaterial(tmpobjid, 1, 16644, "a51_detailstuff", "roucghstonebrtb", 0x00000000);
 	SetDynamicObjectMaterialText(tmpobjid, 1, "2", 100, "Arial", 199, 0, 0xFF000000, 0xFFFFFFFF, 1);
 
-	// Семафор 3
+	// РЎРµРјР°С„РѕСЂ 3
 	tmpobjid = CreateDynamicObject(1214, 2196.36426, -1865.51233, 12.53940,   0.00000, 0.00000, 0.00000);
 	SetDynamicObjectMaterial(tmpobjid, 1, 18646, "matcolours", "grey", 0x00000000);
 	tmpobjid = CreateDynamicObject(1214, 2196.36426, -1865.51233, 13.74540,   0.00000, 0.00000, 0.00000);
@@ -96,7 +96,7 @@ stock ObjectsMap()
 	SetDynamicObjectMaterial(tmpobjid, 1, 16644, "a51_detailstuff", "roucghstonebrtb", 0x00000000);
 	SetDynamicObjectMaterialText(tmpobjid, 1, "3", 100, "Arial", 199, 0, 0xFF000000, 0xFFFFFFFF, 1);
 
-	// Семафор 4
+	// РЎРµРјР°С„РѕСЂ 4
 	tmpobjid = CreateDynamicObject(1214, 2222.76831, -1606.04053, 15.55030,   0.00000, 0.00000, 0.00000);
 	SetDynamicObjectMaterial(tmpobjid, 1, 18646, "matcolours", "grey", 0x00000000);
 	tmpobjid = CreateDynamicObject(1214, 2222.76831, -1606.04053, 16.75630,   0.00000, 0.00000, 0.00000);
@@ -126,7 +126,7 @@ stock ObjectsMap()
 	SetDynamicObjectMaterial(tmpobjid, 1, 16644, "a51_detailstuff", "roucghstonebrtb", 0x00000000);
 	SetDynamicObjectMaterialText(tmpobjid, 1, "4", 100, "Arial", 199, 0, 0xFF000000, 0xFFFFFFFF, 1);
 
-	// Семафор 5
+	// РЎРµРјР°С„РѕСЂ 5
 	tmpobjid = CreateDynamicObject(1214, 2282.50122, -1397.70715, 22.88270,   0.00000, 0.00000, 0.00000);
 	SetDynamicObjectMaterial(tmpobjid, 1, 18646, "matcolours", "grey", 0x00000000);
 	tmpobjid = CreateDynamicObject(1214, 2282.50122, -1397.70715, 24.08870,   0.00000, 0.00000, 0.00000);
@@ -156,7 +156,7 @@ stock ObjectsMap()
 	SetDynamicObjectMaterial(tmpobjid, 1, 16644, "a51_detailstuff", "roucghstonebrtb", 0x00000000);
 	SetDynamicObjectMaterialText(tmpobjid, 1, "5", 100, "Arial", 199, 0, 0xFF000000, 0xFFFFFFFF, 1);
 
-	// Семафор 6
+	// РЎРµРјР°С„РѕСЂ 6
 	tmpobjid = CreateDynamicObject(1214, 2282.28027, -1025.95850, 25.82050,   0.00000, 0.00000, 0.00000);
 	SetDynamicObjectMaterial(tmpobjid, 1, 18646, "matcolours", "grey", 0x00000000);
 	tmpobjid = CreateDynamicObject(1214, 2282.28027, -1025.95850, 27.02650,   0.00000, 0.00000, 0.00000);
@@ -186,7 +186,7 @@ stock ObjectsMap()
 	SetDynamicObjectMaterial(tmpobjid, 1, 16644, "a51_detailstuff", "roucghstonebrtb", 0x00000000);
 	SetDynamicObjectMaterialText(tmpobjid, 1, "6", 100, "Arial", 199, 0, 0xFF000000, 0xFFFFFFFF, 1);
 
-	// Семафор 7
+	// РЎРµРјР°С„РѕСЂ 7
 	tmpobjid = CreateDynamicObject(1214, 2171.17798, -688.15552, 47.99450,   0.00000, 0.00000, 0.00000);
 	SetDynamicObjectMaterial(tmpobjid, 1, 18646, "matcolours", "grey", 0x00000000);
 	tmpobjid = CreateDynamicObject(1214, 2171.17798, -688.15552, 49.19950,   0.00000, 0.00000, 0.00000);
@@ -216,7 +216,7 @@ stock ObjectsMap()
 	SetDynamicObjectMaterial(tmpobjid, 1, 16644, "a51_detailstuff", "roucghstonebrtb", 0x00000000);
 	SetDynamicObjectMaterialText(tmpobjid, 1, "7", 100, "Arial", 199, 0, 0xFF000000, 0xFFFFFFFF, 1);
 
-	// Семафор 8
+	// РЎРµРјР°С„РѕСЂ 8
 	tmpobjid = CreateDynamicObject(1214, 2034.17371, -383.54730, 66.31480,   0.00000, 0.00000, 0.00000);
 	SetDynamicObjectMaterial(tmpobjid, 1, 18646, "matcolours", "grey", 0x00000000);
 	tmpobjid = CreateDynamicObject(1214, 2034.17371, -383.54730, 67.51880,   0.00000, 0.00000, 0.00000);
@@ -246,7 +246,7 @@ stock ObjectsMap()
 	SetDynamicObjectMaterial(tmpobjid, 1, 16644, "a51_detailstuff", "roucghstonebrtb", 0x00000000);
 	SetDynamicObjectMaterialText(tmpobjid, 1, "8", 100, "Arial", 199, 0, 0xFF000000, 0xFFFFFFFF, 1);
 
-	// Семафор 9
+	// РЎРµРјР°С„РѕСЂ 9
 	tmpobjid = CreateDynamicObject(1214, 2483.70508, -274.27921, 16.25260,   0.00000, 0.00000, 0.00000);
 	SetDynamicObjectMaterial(tmpobjid, 1, 18646, "matcolours", "grey", 0x00000000);
 	tmpobjid = CreateDynamicObject(1214, 2483.70508, -274.27921, 17.45660,   0.00000, 0.00000, 0.00000);
@@ -276,7 +276,7 @@ stock ObjectsMap()
 	SetDynamicObjectMaterial(tmpobjid, 1, 16644, "a51_detailstuff", "roucghstonebrtb", 0x00000000);
 	SetDynamicObjectMaterialText(tmpobjid, 1, "9", 100, "Arial", 199, 0, 0xFF000000, 0xFFFFFFFF, 1);
 
-	// Семафор 10
+	// РЎРµРјР°С„РѕСЂ 10
 	tmpobjid = CreateDynamicObject(1214, 2788.50269, -197.81750, 25.73730,   0.00000, 0.00000, 0.00000);
 	SetDynamicObjectMaterial(tmpobjid, 1, 18646, "matcolours", "grey", 0x00000000);
 	tmpobjid = CreateDynamicObject(1214, 2788.50269, -197.81750, 26.94230,   0.00000, 0.00000, 0.00000);
@@ -306,7 +306,7 @@ stock ObjectsMap()
 	SetDynamicObjectMaterial(tmpobjid, 1, 16644, "a51_detailstuff", "roucghstonebrtb", 0x00000000);
 	SetDynamicObjectMaterialText(tmpobjid, 1, "10", 100, "Arial", 199, 0, 0xFF000000, 0xFFFFFFFF, 1);
 
-	// Семафор 11
+	// РЎРµРјР°С„РѕСЂ 11
 	tmpobjid = CreateDynamicObject(1214, 2762.73315, 307.34381, 7.26270,   0.00000, 0.00000, 0.00000);
 	SetDynamicObjectMaterial(tmpobjid, 1, 18646, "matcolours", "grey", 0x00000000);
 	tmpobjid = CreateDynamicObject(1214, 2762.73315, 307.34381, 8.46770,   0.00000, 0.00000, 0.00000);
@@ -336,7 +336,7 @@ stock ObjectsMap()
 	SetDynamicObjectMaterial(tmpobjid, 1, 16644, "a51_detailstuff", "roucghstonebrtb", 0x00000000);
 	SetDynamicObjectMaterialText(tmpobjid, 1, "11", 100, "Arial", 199, 0, 0xFF000000, 0xFFFFFFFF, 1);
 
-	// Семафор 12
+	// РЎРµРјР°С„РѕСЂ 12
 	tmpobjid = CreateDynamicObject(1214, 2762.24634, 830.10730, 9.88520,   0.00000, 0.00000, 0.00000);
 	SetDynamicObjectMaterial(tmpobjid, 1, 18646, "matcolours", "grey", 0x00000000);
 	tmpobjid = CreateDynamicObject(1214, 2762.24634, 830.10730, 11.09020,   0.00000, 0.00000, 0.00000);
@@ -366,7 +366,7 @@ stock ObjectsMap()
 	SetDynamicObjectMaterial(tmpobjid, 1, 16644, "a51_detailstuff", "roucghstonebrtb", 0x00000000);
 	SetDynamicObjectMaterialText(tmpobjid, 1, "12", 100, "Arial", 199, 0, 0xFF000000, 0xFFFFFFFF, 1);
 
-	// Семафор 13
+	// РЎРµРјР°С„РѕСЂ 13
 	tmpobjid = CreateDynamicObject(1214, 2862.13892, 1224.23425, 9.81390,   0.00000, 0.00000, 0.00000);
 	SetDynamicObjectMaterial(tmpobjid, 1, 18646, "matcolours", "grey", 0x00000000);
 	tmpobjid = CreateDynamicObject(1214, 2862.13892, 1224.23425, 11.01990,   0.00000, 0.00000, 0.00000);
@@ -396,7 +396,7 @@ stock ObjectsMap()
 	SetDynamicObjectMaterial(tmpobjid, 1, 16644, "a51_detailstuff", "roucghstonebrtb", 0x00000000);
 	SetDynamicObjectMaterialText(tmpobjid, 1, "13", 100, "Arial", 199, 0, 0xFF000000, 0xFFFFFFFF, 1);
 
-	// Семафор 14
+	// РЎРµРјР°С„РѕСЂ 14
 	tmpobjid = CreateDynamicObject(1214, 2862.20508, 1346.49976, 9.81150,   0.00000, 0.00000, 0.00000);
 	SetDynamicObjectMaterial(tmpobjid, 1, 18646, "matcolours", "grey", 0x00000000);
 	tmpobjid = CreateDynamicObject(1214, 2862.20508, 1346.49976, 11.01750,   0.00000, 0.00000, 0.00000);
@@ -426,7 +426,7 @@ stock ObjectsMap()
 	SetDynamicObjectMaterial(tmpobjid, 1, 16644, "a51_detailstuff", "roucghstonebrtb", 0x00000000);
 	SetDynamicObjectMaterialText(tmpobjid, 1, "14", 100, "Arial", 199, 0, 0xFF000000, 0xFFFFFFFF, 1);
 
-	// Семафор 15
+	// РЎРµРјР°С„РѕСЂ 15
 	tmpobjid = CreateDynamicObject(1214, 2778.56836, 1676.45483, 9.81240,   0.00000, 0.00000, 0.00000);
 	SetDynamicObjectMaterial(tmpobjid, 1, 18646, "matcolours", "grey", 0x00000000);
 	tmpobjid = CreateDynamicObject(1214, 2778.56836, 1676.45483, 11.01840,   0.00000, 0.00000, 0.00000);
@@ -456,7 +456,7 @@ stock ObjectsMap()
 	SetDynamicObjectMaterial(tmpobjid, 1, 16644, "a51_detailstuff", "roucghstonebrtb", 0x00000000);
 	SetDynamicObjectMaterialText(tmpobjid, 1, "15", 100, "Arial", 199, 0, 0xFF000000, 0xFFFFFFFF, 1);
 
-	// Семафор 16
+	// РЎРµРјР°С„РѕСЂ 16
 	tmpobjid = CreateDynamicObject(1214, 2778.58398, 1843.75745, 9.81410,   0.00000, 0.00000, 0.00000);
 	SetDynamicObjectMaterial(tmpobjid, 1, 18646, "matcolours", "grey", 0x00000000);
 	tmpobjid = CreateDynamicObject(1214, 2778.58398, 1843.75745, 11.02010,   0.00000, 0.00000, 0.00000);
@@ -486,7 +486,7 @@ stock ObjectsMap()
 	SetDynamicObjectMaterial(tmpobjid, 1, 16644, "a51_detailstuff", "roucghstonebrtb", 0x00000000);
 	SetDynamicObjectMaterialText(tmpobjid, 1, "16", 100, "Arial", 199, 0, 0xFF000000, 0xFFFFFFFF, 1);
 
-	// Семафор 17
+	// РЎРµРјР°С„РѕСЂ 17
 	tmpobjid = CreateDynamicObject(1214, 2550.13696, 2345.02417, 4.23250,   0.00000, 0.00000, 0.00000);
 	SetDynamicObjectMaterial(tmpobjid, 1, 18646, "matcolours", "grey", 0x00000000);
 	tmpobjid = CreateDynamicObject(1214, 2550.13696, 2345.02417, 5.43850,   0.00000, 0.00000, 0.00000);
@@ -516,7 +516,7 @@ stock ObjectsMap()
 	SetDynamicObjectMaterial(tmpobjid, 1, 16644, "a51_detailstuff", "roucghstonebrtb", 0x00000000);
 	SetDynamicObjectMaterialText(tmpobjid, 1, "17", 100, "Arial", 199, 0, 0xFF000000, 0xFFFFFFFF, 1);
 
-	// Семафор 18
+	// РЎРµРјР°С„РѕСЂ 18
 	tmpobjid = CreateDynamicObject(1214, 2409.71069, 2687.90527, 9.81440,   0.00000, 0.00000, 0.00000);
 	SetDynamicObjectMaterial(tmpobjid, 1, 18646, "matcolours", "grey", 0x00000000);
 	tmpobjid = CreateDynamicObject(1214, 2409.71069, 2687.90527, 11.02040,   0.00000, 0.00000, 0.00000);
@@ -546,7 +546,7 @@ stock ObjectsMap()
 	SetDynamicObjectMaterial(tmpobjid, 1, 16644, "a51_detailstuff", "roucghstonebrtb", 0x00000000);
 	SetDynamicObjectMaterialText(tmpobjid, 1, "18", 100, "Arial", 199, 0, 0xFF000000, 0xFFFFFFFF, 1);
 
-	// Семафор 19
+	// РЎРµРјР°С„РѕСЂ 19
 	tmpobjid = CreateDynamicObject(1214, 1930.10779, 2691.88379, 9.81410,   0.00000, 0.00000, 0.00000);
 	SetDynamicObjectMaterial(tmpobjid, 1, 18646, "matcolours", "grey", 0x00000000);
 	tmpobjid = CreateDynamicObject(1214, 1930.10779, 2691.88379, 11.02010,   0.00000, 0.00000, 0.00000);
@@ -576,7 +576,7 @@ stock ObjectsMap()
 	SetDynamicObjectMaterial(tmpobjid, 1, 16644, "a51_detailstuff", "roucghstonebrtb", 0x00000000);
 	SetDynamicObjectMaterialText(tmpobjid, 1, "19", 100, "Arial", 199, 0, 0xFF000000, 0xFFFFFFFF, 1);
 
-	// Семафор 20
+	// РЎРµРјР°С„РѕСЂ 20
 	tmpobjid = CreateDynamicObject(1214, 1486.35461, 2629.83301, 9.81330,   0.00000, 0.00000, 0.00000);
 	SetDynamicObjectMaterial(tmpobjid, 1, 18646, "matcolours", "grey", 0x00000000);
 	tmpobjid = CreateDynamicObject(1214, 1486.35461, 2629.83301, 11.01930,   0.00000, 0.00000, 0.00000);
@@ -606,7 +606,7 @@ stock ObjectsMap()
 	SetDynamicObjectMaterial(tmpobjid, 1, 16644, "a51_detailstuff", "roucghstonebrtb", 0x00000000);
 	SetDynamicObjectMaterialText(tmpobjid, 1, "20", 100, "Arial", 199, 0, 0xFF000000, 0xFFFFFFFF, 1);
 
-	// Семафор 21
+	// РЎРµРјР°С„РѕСЂ 21
 	tmpobjid = CreateDynamicObject(1214, 1370.08435, 2629.89917, 9.81400,   0.00000, 0.00000, 0.00000);
 	SetDynamicObjectMaterial(tmpobjid, 1, 18646, "matcolours", "grey", 0x00000000);
 	tmpobjid = CreateDynamicObject(1214, 1370.08435, 2629.89917, 11.02000,   0.00000, 0.00000, 0.00000);
@@ -636,7 +636,7 @@ stock ObjectsMap()
 	SetDynamicObjectMaterial(tmpobjid, 1, 16644, "a51_detailstuff", "roucghstonebrtb", 0x00000000);
 	SetDynamicObjectMaterialText(tmpobjid, 1, "21", 100, "Arial", 199, 0, 0xFF000000, 0xFFFFFFFF, 1);
 
-	// Семафор 22
+	// РЎРµРјР°С„РѕСЂ 22
 	tmpobjid = CreateDynamicObject(1214, 968.78088, 2756.04102, 16.62250,   0.00000, 0.00000, 0.00000);
 	SetDynamicObjectMaterial(tmpobjid, 1, 18646, "matcolours", "grey", 0x00000000);
 	tmpobjid = CreateDynamicObject(1214, 968.78088, 2756.04102, 17.82850,   0.00000, 0.00000, 0.00000);
@@ -666,7 +666,7 @@ stock ObjectsMap()
 	SetDynamicObjectMaterial(tmpobjid, 1, 16644, "a51_detailstuff", "roucghstonebrtb", 0x00000000);
 	SetDynamicObjectMaterialText(tmpobjid, 1, "22", 100, "Arial", 199, 0, 0xFF000000, 0xFFFFFFFF, 1);
 
-	// Семафор 23
+	// РЎРµРјР°С„РѕСЂ 23
 	tmpobjid = CreateDynamicObject(1214, 728.34192, 2376.41650, 18.53690,   0.00000, 0.00000, 0.00000);
 	SetDynamicObjectMaterial(tmpobjid, 1, 18646, "matcolours", "grey", 0x00000000);
 	tmpobjid = CreateDynamicObject(1214, 728.34192, 2376.41650, 19.74190,   0.00000, 0.00000, 0.00000);
@@ -696,7 +696,7 @@ stock ObjectsMap()
 	SetDynamicObjectMaterial(tmpobjid, 1, 16644, "a51_detailstuff", "roucghstonebrtb", 0x00000000);
 	SetDynamicObjectMaterialText(tmpobjid, 1, "23", 100, "Arial", 199, 0, 0xFF000000, 0xFFFFFFFF, 1);
 
-	// Семафор 24
+	// РЎРµРјР°С„РѕСЂ 24
 	tmpobjid = CreateDynamicObject(1214, 743.46552, 2010.25513, 4.98880,   0.00000, 0.00000, 0.00000);
 	SetDynamicObjectMaterial(tmpobjid, 1, 18646, "matcolours", "grey", 0x00000000);
 	tmpobjid = CreateDynamicObject(1214, 743.46552, 2010.25513, 6.19480,   0.00000, 0.00000, 0.00000);
@@ -726,7 +726,7 @@ stock ObjectsMap()
 	SetDynamicObjectMaterial(tmpobjid, 1, 16644, "a51_detailstuff", "roucghstonebrtb", 0x00000000);
 	SetDynamicObjectMaterialText(tmpobjid, 1, "24", 100, "Arial", 199, 0, 0xFF000000, 0xFFFFFFFF, 1);
 
-	// Семафор 25
+	// РЎРµРјР°С„РѕСЂ 25
 	tmpobjid = CreateDynamicObject(1214, 745.74591, 1551.99805, 8.18500,   0.00000, 0.00000, 0.00000);
 	SetDynamicObjectMaterial(tmpobjid, 1, 18646, "matcolours", "grey", 0x00000000);
 	tmpobjid = CreateDynamicObject(1214, 745.74591, 1551.99805, 9.39000,   0.00000, 0.00000, 0.00000);
@@ -756,7 +756,7 @@ stock ObjectsMap()
 	SetDynamicObjectMaterial(tmpobjid, 1, 16644, "a51_detailstuff", "roucghstonebrtb", 0x00000000);
 	SetDynamicObjectMaterialText(tmpobjid, 1, "25", 100, "Arial", 199, 0, 0xFF000000, 0xFFFFFFFF, 1);
 
-	// Семафор 26
+	// РЎРµРјР°С„РѕСЂ 26
 	tmpobjid = CreateDynamicObject(1214, 469.31241, 1214.11194, 14.39220,   0.00000, 0.00000, 0.00000);
 	SetDynamicObjectMaterial(tmpobjid, 1, 18646, "matcolours", "grey", 0x00000000);
 	tmpobjid = CreateDynamicObject(1214, 469.31241, 1214.11194, 15.59820,   0.00000, 0.00000, 0.00000);
@@ -786,7 +786,7 @@ stock ObjectsMap()
 	SetDynamicObjectMaterial(tmpobjid, 1, 16644, "a51_detailstuff", "roucghstonebrtb", 0x00000000);
 	SetDynamicObjectMaterialText(tmpobjid, 1, "26", 100, "Arial", 199, 0, 0xFF000000, 0xFFFFFFFF, 1);
 
-	// Семафор 27
+	// РЎРµРјР°С„РѕСЂ 27
 	tmpobjid = CreateDynamicObject(1214, 47.50960, 1288.47925, 17.62520,   0.00000, 0.00000, 0.00000);
 	SetDynamicObjectMaterial(tmpobjid, 1, 18646, "matcolours", "grey", 0x00000000);
 	tmpobjid = CreateDynamicObject(1214, 47.50960, 1288.47925, 18.82920,   0.00000, 0.00000, 0.00000);
@@ -816,7 +816,7 @@ stock ObjectsMap()
 	SetDynamicObjectMaterial(tmpobjid, 1, 16644, "a51_detailstuff", "roucghstonebrtb", 0x00000000);
 	SetDynamicObjectMaterialText(tmpobjid, 1, "27", 100, "Arial", 199, 0, 0xFF000000, 0xFFFFFFFF, 1);
 
-	// Семафор 28
+	// РЎРµРјР°С„РѕСЂ 28
 	tmpobjid = CreateDynamicObject(1214, -650.64368, 1174.44690, 27.00280,   0.00000, 0.00000, 0.00000);
 	SetDynamicObjectMaterial(tmpobjid, 1, 18646, "matcolours", "grey", 0x00000000);
 	tmpobjid = CreateDynamicObject(1214, -650.64368, 1174.44690, 28.20880,   0.00000, 0.00000, 0.00000);
@@ -846,7 +846,7 @@ stock ObjectsMap()
 	SetDynamicObjectMaterial(tmpobjid, 1, 16644, "a51_detailstuff", "roucghstonebrtb", 0x00000000);
 	SetDynamicObjectMaterialText(tmpobjid, 1, "28", 100, "Arial", 199, 0, 0xFF000000, 0xFFFFFFFF, 1);
 
-	// Семафоры 29
+	// РЎРµРјР°С„РѕСЂС‹ 29
 	tmpobjid = CreateDynamicObject(1214, -1000.29883, 945.37195, 33.57060,   0.00000, 0.00000, 0.00000);
 	SetDynamicObjectMaterial(tmpobjid, 1, 18646, "matcolours", "grey", 0x00000000);
 	tmpobjid = CreateDynamicObject(1214, -1000.29883, 945.37189, 34.77660,   0.00000, 0.00000, 0.00000);
@@ -876,7 +876,7 @@ stock ObjectsMap()
 	SetDynamicObjectMaterial(tmpobjid, 1, 16644, "a51_detailstuff", "roucghstonebrtb", 0x00000000);
 	SetDynamicObjectMaterialText(tmpobjid, 1, "29", 100, "Arial", 199, 0, 0xFF000000, 0xFFFFFFFF, 1);
 
-	// Семафор 30
+	// РЎРµРјР°С„РѕСЂ 30
 	tmpobjid = CreateDynamicObject(1214, -1510.24475, 574.80438, 33.56740,   0.00000, 0.00000, 0.00000);
 	SetDynamicObjectMaterial(tmpobjid, 1, 18646, "matcolours", "grey", 0x00000000);
 	tmpobjid = CreateDynamicObject(1214, -1510.24475, 574.80438, 34.77340,   0.00000, 0.00000, 0.00000);
@@ -906,7 +906,7 @@ stock ObjectsMap()
 	SetDynamicObjectMaterial(tmpobjid, 1, 16644, "a51_detailstuff", "roucghstonebrtb", 0x00000000);
 	SetDynamicObjectMaterialText(tmpobjid, 1, "30", 100, "Arial", 199, 0, 0xFF000000, 0xFFFFFFFF, 1);
 
-	// Семафор 31
+	// РЎРµРјР°С„РѕСЂ 31
 	tmpobjid = CreateDynamicObject(1214, -1937.30872, 205.78493, 24.54750,   0.00000, 0.00000, 0.00000);
 	SetDynamicObjectMaterial(tmpobjid, 1, 18646, "matcolours", "grey", 0x00000000);
 	tmpobjid = CreateDynamicObject(1214, -1937.30872, 205.78490, 25.75350,   0.00000, 0.00000, 0.00000);
@@ -936,7 +936,7 @@ stock ObjectsMap()
 	SetDynamicObjectMaterial(tmpobjid, 1, 16644, "a51_detailstuff", "roucghstonebrtb", 0x00000000);
 	SetDynamicObjectMaterialText(tmpobjid, 1, "31", 100, "Arial", 199, 0, 0xFF000000, 0xFFFFFFFF, 1);
 
-	// Семафор 32
+	// РЎРµРјР°С„РѕСЂ 32
 	tmpobjid = CreateDynamicObject(1214, -1941.79187, 62.17670, 24.70550,   0.00000, 0.00000, 0.00000);
 	SetDynamicObjectMaterial(tmpobjid, 1, 18646, "matcolours", "grey", 0x00000000);
 	tmpobjid = CreateDynamicObject(1214, -1941.79187, 62.17670, 25.91150,   0.00000, 0.00000, 0.00000);
@@ -966,7 +966,7 @@ stock ObjectsMap()
 	SetDynamicObjectMaterial(tmpobjid, 1, 16644, "a51_detailstuff", "roucghstonebrtb", 0x00000000);
 	SetDynamicObjectMaterialText(tmpobjid, 1, "32", 100, "Arial", 199, 0, 0xFF000000, 0xFFFFFFFF, 1);
 
-	// Семафор 33
+	// РЎРµРјР°С„РѕСЂ 33
 	tmpobjid = CreateDynamicObject(1214, -1977.49304, -557.22223, 24.70660,   0.00000, 0.00000, 0.00000);
 	SetDynamicObjectMaterial(tmpobjid, 1, 18646, "matcolours", "grey", 0x00000000);
 	tmpobjid = CreateDynamicObject(1214, -1977.49304, -557.22223, 25.91260,   0.00000, 0.00000, 0.00000);
@@ -996,7 +996,7 @@ stock ObjectsMap()
 	SetDynamicObjectMaterial(tmpobjid, 1, 16644, "a51_detailstuff", "roucghstonebrtb", 0x00000000);
 	SetDynamicObjectMaterialText(tmpobjid, 1, "33", 100, "Arial", 199, 0, 0xFF000000, 0xFFFFFFFF, 1);
 
-	// Семафор 34
+	// РЎРµРјР°С„РѕСЂ 34
 	tmpobjid = CreateDynamicObject(1214, -1976.29675, -939.40900, 24.57880,   0.00000, 0.00000, 0.00000);
 	SetDynamicObjectMaterial(tmpobjid, 1, 18646, "matcolours", "grey", 0x00000000);
 	tmpobjid = CreateDynamicObject(1214, -1976.29675, -939.40900, 25.78380,   0.00000, 0.00000, 0.00000);
@@ -1026,7 +1026,7 @@ stock ObjectsMap()
 	SetDynamicObjectMaterial(tmpobjid, 1, 16644, "a51_detailstuff", "roucghstonebrtb", 0x00000000);
 	SetDynamicObjectMaterialText(tmpobjid, 1, "34", 100, "Arial", 199, 0, 0xFF000000, 0xFFFFFFFF, 1);
 
-	// Семафор 35
+	// РЎРµРјР°С„РѕСЂ 35
 	tmpobjid = CreateDynamicObject(1214, -1809.46790, -1347.40234, 12.94080,   0.00000, 0.00000, 0.00000);
 	SetDynamicObjectMaterial(tmpobjid, 1, 18646, "matcolours", "grey", 0x00000000);
 	tmpobjid = CreateDynamicObject(1214, -1809.46790, -1347.40234, 14.14680,   0.00000, 0.00000, 0.00000);
@@ -1056,7 +1056,7 @@ stock ObjectsMap()
 	SetDynamicObjectMaterial(tmpobjid, 1, 16644, "a51_detailstuff", "roucghstonebrtb", 0x00000000);
 	SetDynamicObjectMaterialText(tmpobjid, 1, "35", 100, "Arial", 199, 0, 0xFF000000, 0xFFFFFFFF, 1);
 
-	// Семафор 36
+	// РЎРµРјР°С„РѕСЂ 36
 	tmpobjid = CreateDynamicObject(1214, -1413.31165, -1506.12097, 21.49590,   0.00000, 0.00000, 0.00000);
 	SetDynamicObjectMaterial(tmpobjid, 1, 18646, "matcolours", "grey", 0x00000000);
 	tmpobjid = CreateDynamicObject(1214, -1413.31165, -1506.12097, 22.70090,   0.00000, 0.00000, 0.00000);
@@ -1086,7 +1086,7 @@ stock ObjectsMap()
 	SetDynamicObjectMaterial(tmpobjid, 1, 16644, "a51_detailstuff", "roucghstonebrtb", 0x00000000);
 	SetDynamicObjectMaterialText(tmpobjid, 1, "36", 100, "Arial", 199, 0, 0xFF000000, 0xFFFFFFFF, 1);
 
-	// Семафор 37
+	// РЎРµРјР°С„РѕСЂ 37
 	tmpobjid = CreateDynamicObject(1214, -972.08868, -1496.54431, 85.20240,   0.00000, 0.00000, 0.00000);
 	SetDynamicObjectMaterial(tmpobjid, 1, 18646, "matcolours", "grey", 0x00000000);
 	tmpobjid = CreateDynamicObject(1214, -972.08868, -1496.54431, 86.40840,   0.00000, 0.00000, 0.00000);
@@ -1116,7 +1116,7 @@ stock ObjectsMap()
 	SetDynamicObjectMaterial(tmpobjid, 1, 16644, "a51_detailstuff", "roucghstonebrtb", 0x00000000);
 	SetDynamicObjectMaterialText(tmpobjid, 1, "37", 100, "Arial", 199, 0, 0xFF000000, 0xFFFFFFFF, 1);
 
-	// Семафор 38
+	// РЎРµРјР°С„РѕСЂ 38
 	tmpobjid = CreateDynamicObject(1214, -827.05981, -1262.66736, 74.43450,   0.00000, 0.00000, 0.00000);
 	SetDynamicObjectMaterial(tmpobjid, 1, 18646, "matcolours", "grey", 0x00000000);
 	tmpobjid = CreateDynamicObject(1214, -827.05981, -1262.66736, 75.64050,   0.00000, 0.00000, 0.00000);
@@ -1146,7 +1146,7 @@ stock ObjectsMap()
 	SetDynamicObjectMaterial(tmpobjid, 1, 16644, "a51_detailstuff", "roucghstonebrtb", 0x00000000);
 	SetDynamicObjectMaterialText(tmpobjid, 1, "38", 100, "Arial", 199, 0, 0xFF000000, 0xFFFFFFFF, 1);
 
-	// Семафор 39
+	// РЎРµРјР°С„РѕСЂ 39
 	tmpobjid = CreateDynamicObject(1214, -497.64182, -1235.26074, 41.02750,   0.00000, 0.00000, 0.00000);
 	SetDynamicObjectMaterial(tmpobjid, 1, 18646, "matcolours", "grey", 0x00000000);
 	tmpobjid = CreateDynamicObject(1214, -497.64182, -1235.26074, 42.23350,   0.00000, 0.00000, 0.00000);
@@ -1176,7 +1176,7 @@ stock ObjectsMap()
 	SetDynamicObjectMaterial(tmpobjid, 1, 16644, "a51_detailstuff", "roucghstonebrtb", 0x00000000);
 	SetDynamicObjectMaterialText(tmpobjid, 1, "39", 100, "Arial", 199, 0, 0xFF000000, 0xFFFFFFFF, 1);
 
-	// Семафор 40
+	// РЎРµРјР°С„РѕСЂ 40
 	tmpobjid = CreateDynamicObject(1214, -115.09420, -1017.18799, 11.63180,   0.00000, 0.00000, 0.00000);
 	SetDynamicObjectMaterial(tmpobjid, 1, 18646, "matcolours", "grey", 0x00000000);
 	tmpobjid = CreateDynamicObject(1214, -115.09420, -1017.18799, 12.83680,   0.00000, 0.00000, 0.00000);
@@ -1206,7 +1206,7 @@ stock ObjectsMap()
 	SetDynamicObjectMaterial(tmpobjid, 1, 16644, "a51_detailstuff", "roucghstonebrtb", 0x00000000);
 	SetDynamicObjectMaterialText(tmpobjid, 1, "40", 100, "Arial", 199, 0, 0xFF000000, 0xFFFFFFFF, 1);
 
-	// Семафор 41
+	// РЎРµРјР°С„РѕСЂ 41
 	tmpobjid = CreateDynamicObject(1214, 249.46550, -1035.40820, 19.59740,   0.00000, 0.00000, 0.00000);
 	SetDynamicObjectMaterial(tmpobjid, 1, 18646, "matcolours", "grey", 0x00000000);
 	tmpobjid = CreateDynamicObject(1214, 249.46550, -1035.40820, 20.80340,   0.00000, 0.00000, 0.00000);
@@ -1236,7 +1236,7 @@ stock ObjectsMap()
 	SetDynamicObjectMaterial(tmpobjid, 1, 16644, "a51_detailstuff", "roucghstonebrtb", 0x00000000);
 	SetDynamicObjectMaterialText(tmpobjid, 1, "41", 100, "Arial", 199, 0, 0xFF000000, 0xFFFFFFFF, 1);
 
-	// Семафор 42
+	// РЎРµРјР°С„РѕСЂ 42
 	tmpobjid = CreateDynamicObject(1214, 744.24518, -1301.26636, -1.90350,   0.00000, 0.00000, 0.00000);
 	SetDynamicObjectMaterial(tmpobjid, 1, 18646, "matcolours", "grey", 0x00000000);
 	tmpobjid = CreateDynamicObject(1214, 744.24518, -1301.26636, -0.69750,   0.00000, 0.00000, 0.00000);
@@ -1266,7 +1266,7 @@ stock ObjectsMap()
 	SetDynamicObjectMaterial(tmpobjid, 1, 16644, "a51_detailstuff", "roucghstonebrtb", 0x00000000);
 	SetDynamicObjectMaterialText(tmpobjid, 1, "42", 100, "Arial", 199, 0, 0xFF000000, 0xFFFFFFFF, 1);
 
-	// Семафор 43
+	// РЎРµРјР°С„РѕСЂ 43
 	tmpobjid = CreateDynamicObject(1214, 859.62262, -1404.69177, -2.61950,   0.00000, 0.00000, 0.00000);
 	SetDynamicObjectMaterial(tmpobjid, 1, 18646, "matcolours", "grey", 0x00000000);
 	tmpobjid = CreateDynamicObject(1214, 859.62262, -1404.69177, -1.41350,   0.00000, 0.00000, 0.00000);
@@ -1296,7 +1296,7 @@ stock ObjectsMap()
 	SetDynamicObjectMaterial(tmpobjid, 1, 16644, "a51_detailstuff", "roucghstonebrtb", 0x00000000);
 	SetDynamicObjectMaterialText(tmpobjid, 1, "43", 100, "Arial", 199, 0, 0xFF000000, 0xFFFFFFFF, 1);
 
-	// Семафор 44
+	// РЎРµРјР°С„РѕСЂ 44
 	tmpobjid = CreateDynamicObject(1214, 1216.97217, -1798.19519, -5.12890,   0.00000, 0.00000, 0.00000);
 	SetDynamicObjectMaterial(tmpobjid, 1, 18646, "matcolours", "grey", 0x00000000);
 	tmpobjid = CreateDynamicObject(1214, 1216.97217, -1798.19519, -3.92290,   0.00000, 0.00000, 0.00000);
@@ -1326,7 +1326,7 @@ stock ObjectsMap()
 	SetDynamicObjectMaterial(tmpobjid, 1, 16644, "a51_detailstuff", "roucghstonebrtb", 0x00000000);
 	SetDynamicObjectMaterialText(tmpobjid, 1, "44", 100, "Arial", 199, 0, 0xFF000000, 0xFFFFFFFF, 1);
 
-	// Семафор 45
+	// РЎРµРјР°С„РѕСЂ 45
 	tmpobjid = CreateDynamicObject(1214, 1611.37817, -1951.39758, 12.54190,   0.00000, 0.00000, 0.00000);
 	SetDynamicObjectMaterial(tmpobjid, 1, 18646, "matcolours", "grey", 0x00000000);
 	tmpobjid = CreateDynamicObject(1214, 1611.37817, -1951.39758, 13.74790,   0.00000, 0.00000, 0.00000);
@@ -1356,7 +1356,7 @@ stock ObjectsMap()
 	SetDynamicObjectMaterial(tmpobjid, 1, 16644, "a51_detailstuff", "roucghstonebrtb", 0x00000000);
 	SetDynamicObjectMaterialText(tmpobjid, 1, "45", 100, "Arial", 199, 0, 0xFF000000, 0xFFFFFFFF, 1);
 
-	// Комната диспетчера
+	// РљРѕРјРЅР°С‚Р° РґРёСЃРїРµС‚С‡РµСЂР°
 	tmpobjid = CreateObject(19376, 1021.317871, 160.605804, 2000.000000, 0.000000, 90.000000, 0.000000); 
 	SetObjectMaterial(tmpobjid, 0, 14534, "ab_wooziea", "ab_tileDiamond", 0x00000000);
 	tmpobjid = CreateDynamicObject(19376, 1021.317871, 170.234893, 2000.000000, 0.000000, 90.000000, 0.000000); 
@@ -2046,7 +2046,7 @@ stock ObjectsMap()
 	tmpobjid = CreateDynamicObject(14793, 1020.292358, 157.301681, 2004.226318, 0.000000, 0.000000, 0.000000); 
 	tmpobjid = CreateDynamicObject(14793, 1020.292358, 168.931167, 2004.226318, 0.000000, 0.000000, 0.000000); 
 
-	// Указатели
+	// РЈРєР°Р·Р°С‚РµР»Рё
 	tmpobjid = CreateDynamicObject(19420, 1782.97888, -1953.87634, 12.59400,   0.00000, 0.00000, 90.00000);
 	SetDynamicObjectMaterial(tmpobjid, 0, 18065, "ab_sfammumain", "ab_wallpaper02", 0x00000000);
 	tmpobjid = CreateDynamicObject(19981, 1782.98511, -1951.76306, 13.11950,   0.00000, 0.00000, -90.00000);
