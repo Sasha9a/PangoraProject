@@ -1,0 +1,4 @@
+stock Objects()
+{
+	return true;
+}
