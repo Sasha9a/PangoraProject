@@ -7,9 +7,9 @@ main() {}
 #pragma disablerecursion
 // ==================== [ MySQL ] ====================
 #define SQL_HOST 					"localhost" // Хост MySQL
-#define SQL_USER					"H41161" // Пользователь
+#define SQL_USER					"H46847" // Пользователь
 #define SQL_PASS					"12345678" // Пароль
-#define SQL_DB						"EVEBASE41161" // База данных
+#define SQL_DB						"EVEBASE46847" // База данных
 
 #define SQL_ACC						"accounts"
 
@@ -148,7 +148,7 @@ main() {}
     #define isnull(%1) ((!(%1[0])) || (((%1[0]) == '\1') && (!(%1[1]))))
 #endif
 #define SCRIPT					"Aleksandr_Dovgiy" // Поменете на ник скриптера (основателя)
-#define MOD_VERSION				"Pangora Project v0.1" // Поменяете на свое название мода
+#define MOD_VERSION				"Pangora Trains v0.1" // Поменяете на свое название мода
 #define f(%0, 					format(%0, sizeof(%0),
 #define GN(%1)  				Player[%1][pName]
 #define void%0(%1)   			forward%0(%1); public%0(%1)
